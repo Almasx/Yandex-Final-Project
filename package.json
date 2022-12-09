@@ -2,6 +2,7 @@
   "name": "yandex-final-project",
   "version": "1.0.0",
   "license": "MIT",
+  "private": true,
   "scripts": {
     "server": "yarn workspace server run start:watch",
     "client": "yarn workspace client run start",
