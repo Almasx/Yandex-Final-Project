@@ -9,3 +9,6 @@
 .scrollbar-hidden::-webkit-scrollbar {
   display: none;
 }
+ymaps {
+  -webkit-filter: grayscale(100%);
+}
