@@ -2,10 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
-.content-container {
-  height: calc(100vh - 68px);
+@media (min-width: 1534px){
+  .container {
+    max-width: 1279px
+  }
+}
+
+@media (max-width: 1535px){
+  .container {
+    max-width: 1200px
+  }
+}
+@media (max-width: 1279px){
+  .container{
+    max-width: 1024px
+  }
+}
+@media (max-width: 1023px){
+  .container{
+    max-width: 768px
+  }
+}
+@media (max-width: 767px){
+  .container{
+    max-width: 640px
+    
+  }
+}
+@media (max-width: 639px){
+  .container{
+    max-width: 580px
+    
+  }
 }
 
 .scrollbar-hidden::-webkit-scrollbar {
   display: none;
 }
+
+ymaps {
+  -webkit-filter: grayscale(100%);
+  width: 100%;
+}
+
+.text-behind{
+  letter-spacing: 1.5vw;
+  line-height: 191px;
+  left: -4%;
+  top: calc(50% - 191px/2);
+  width: 100vw;
+  white-space: nowrap;
+  font-weight: 500;
+  font-size: 9vw;
+  font-style: normal;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.12) -0.06%, rgba(141, 141, 141, 0) 100.06%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  position: absolute;
+  overflow: hidden;
+  z-index: 10;
+}
+

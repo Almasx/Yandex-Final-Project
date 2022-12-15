@@ -10,5 +10,9 @@
   },
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "loadjs": "^4.2.0",
+    "react-yandex-maps": "^2.3.0"
+  }
 }
