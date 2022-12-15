@@ -2,37 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-@media (min-width: 1534px){
+@media (min-width: 1534px) {
   .container {
-    max-width: 1279px
+    max-width: 1279px;
   }
 }
 
-@media (max-width: 1535px){
+@media (max-width: 1535px) {
   .container {
-    max-width: 1200px
+    max-width: 1200px;
   }
 }
-@media (max-width: 1279px){
-  .container{
-    max-width: 1024px
+@media (max-width: 1279px) {
+  .container {
+    max-width: 1024px;
   }
 }
-@media (max-width: 1023px){
-  .container{
-    max-width: 768px
+@media (max-width: 1023px) {
+  .container {
+    max-width: 768px;
   }
 }
-@media (max-width: 767px){
-  .container{
-    max-width: 640px
-    
+@media (max-width: 767px) {
+  .container {
+    max-width: 640px;
   }
 }
-@media (max-width: 639px){
-  .container{
-    max-width: 580px
-    
+@media (max-width: 639px) {
+  .container {
+    max-width: 580px;
   }
 }
 
@@ -45,17 +43,21 @@ ymaps {
   width: 100%;
 }
 
-.text-behind{
+.text-behind {
   letter-spacing: 1.5vw;
   line-height: 191px;
   left: -4%;
-  top: calc(50% - 191px/2);
+  top: calc(50% - 191px / 2);
   width: 100vw;
   white-space: nowrap;
   font-weight: 500;
   font-size: 9vw;
   font-style: normal;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.12) -0.06%, rgba(141, 141, 141, 0) 100.06%);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.12) -0.06%,
+    rgba(141, 141, 141, 0) 100.06%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -65,3 +67,104 @@ ymaps {
   z-index: 10;
 }
 
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #020202;
+  padding-top: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #161618;
+  border-radius: 10px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #2e2e35;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./assets/fonts/SF-Pro/SF-Pro-Display-Bold.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./assets/fonts/SF-Pro/SF-Pro-Display-Thin.otf");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./assets/fonts/SF-Pro/SF-Pro-Display-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./assets/fonts/SF-Pro/SF-Pro-Display-ThinItalic.otf");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./assets/fonts/SF-Pro/SF-Pro-Display-Light.otf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./assets/fonts/SF-Pro/SF-Pro-Display-MediumItalic.otf");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./assets/fonts/SF-Pro/SF-Pro-Display-LightItalic.otf");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./assets/fonts/SF-Pro/SF-Pro-Display-Medium.otf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./assets/fonts/SF-Pro/SF-Pro-Display-BoldItalic.otf");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./assets/fonts/SF-Pro/SF-Pro-Display-BlackItalic.otf");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./assets/fonts/SF-Pro/SF-Pro-Display-Black.otf");
+  font-weight: 900;
+  font-style: normal;
+}

@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
-import Home from "../pages/Home";
+import Team from "../pages/Team";
 
 export const router = createBrowserRouter([
-  { path: "/", element: <Home />, errorElement: <div>Page not found</div> },
+  { path: "/", errorElement: <div>Page not found</div> },
+  { path: "/team", element: <Team /> },
 ]);

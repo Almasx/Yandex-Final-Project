@@ -1,13 +1,33 @@
+import clsx from "clsx";
 import { Link } from "react-router-dom";
-// import { ReactComponent as Cart } from '../../assets/icons/Cart.svg';
+import { ReactComponent as Logo } from "../../assets/Logo.svg";
 
-const Navigation = () => {
+interface NavigationProps {
+  className?: string;
+}
+
+const Navigation = ({ className = "" }: NavigationProps) => {
   return (
-    <nav className="bg-black py-5 px-10 flex flex-row justify-between sticky top-0 left-0 right-0 z-10">
-      <Link to="/" className="text-xl text-white">
-        Магазин
-      </Link>
-      <Link to="/cart">{/* <Cart /> */}</Link>
+    <nav
+      className={clsx(
+        className,
+        "flex w-full flex-row items-center justify-between text-white text-sm uppercase",
+        "border-b border-b-gray bg-black/80 px-10 h-16 backdrop-blur-2xl"
+      )}
+    >
+      <Logo />
+      <div className="flex flex-row gap-5 text-white/30 capitalize font-light ">
+        <Link to="/" className="hover:text-white duration-200">
+          Home
+        </Link>
+        <Link to="/" className="hover:text-white duration-200">
+          Projects
+        </Link>
+        <Link to="/" className="hover:text-white duration-200">
+          Team
+        </Link>
+      </div>
+      <button className="font-medium">Contact</button>
     </nav>
   );
 };
