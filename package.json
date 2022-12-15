@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "server": "yarn workspace server run start:watch",
-    "client": "yarn workspace client run start",
+    "client": "yarn workspace client run dev",
     "dev": "concurrently \"yarn server\" \"yarn client\""
   },
   "workspaces": [
