@@ -3,8 +3,8 @@ import Image from "next/image";
 const Navigation = () => {
   return (
     <nav
-      className=" flex h-16 w-full items-center justify-center border-b
-     border-b-gray-200 bg-black/80 text-sm uppercase text-white backdrop-blur-2xl"
+      className="fixed z-20 flex h-16 w-full items-center justify-center border-b
+     border-b-gray-200 bg-black/60 text-sm uppercase text-white backdrop-blur-2xl "
     >
       <div className="flex w-[1200px] flex-row items-center justify-between">
         <Image
@@ -24,7 +24,7 @@ const Navigation = () => {
             Team
           </a>
         </div>
-        <a href="/contact">
+        <a href="/contact" className="w-32">
           <button className="font-medium">Contact</button>
         </a>
       </div>

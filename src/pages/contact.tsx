@@ -40,7 +40,7 @@ const Contact = () => {
           </CheckBox>
           <div className="col-span-full">
             <Button
-              className="mt-16 w-56 rounded-full py-5 text-2xl font-normal"
+              className="mt-16 w-56 rounded-full py-4 text-2xl font-normal"
               variant="secondary"
             >
               Submit
