@@ -14,6 +14,7 @@ module.exports = {
       gray: "#1A1A1A",
       "white-text": "#FAFAFA",
       "dark-bg": "#0B0B0B",
+      'light-gray': '#D9D9D9',
     },
     screens: {
       "2xl": { max: "1535px" },
