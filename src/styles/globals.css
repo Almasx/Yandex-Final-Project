@@ -168,3 +168,60 @@ html {
   font-weight: 900;
   font-style: normal;
 }
+
+.dot{
+  position:absolute;
+  top: -13px;
+  left:50%;
+  transform: translateX(-50%);
+  width:30px;
+  height:30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sun{
+  width:85%;
+  height:85%;
+  position:absolute;
+  animation-iteration-count:infinite;
+  animation-timing-function:linear;
+  animation-name:orbit;
+  animation-duration:30s;
+  border-radius: 50%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+.sun-min{
+  width: 65%;
+  height: 65%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0;
+  right: 0;
+  animation-name:orbit-min;
+  animation-duration:17s;
+}
+@keyframes orbit { 
+from { transform:rotate(0deg) } 
+to { transform:rotate(360deg) } 
+}
+@keyframes orbit-min { 
+  from { transform:rotate(360deg) } 
+  to { transform:rotate(0deg) } 
+  }
+
+.circle{
+  width: 85%;
+  height: 85%;
+}
+.circle-lg{
+  width: 105%;
+  max-width: 105%;
+  height: 105%;
+}
+

@@ -7,11 +7,21 @@ const Team = () => {
     <>
       <section className="relative col-span-full h-screen ">
         <div className="absolute h-full w-full scale-110">
-          <img
-            src="./images/circles.png"
-            className="absolute inset-0 m-auto aspect-square h-5/6 object-cover"
-            alt="circles with stars"
-          />
+          <div className="absolute inset-0 m-auto aspect-square h-5/6 object-cover">
+            <img src="./images/teams_circle.svg" className="circle opacity-70 w-[85%] absolute top-[50%] translate-y-[-50%] h-[85%] translate-x-[-50%] left-[50%]" alt="circle"/>
+            <div className="sun">
+              <div className="dot">
+                <img src="./images/teams_star.svg" alt="star"/>
+              </div>
+            </div>
+            <img src="./images/teams_circle.svg" className="w-[65%] absolute top-[50%] translate-y-[-50%] h-[65%] translate-x-[-50%] left-[50%]" alt="circle"/>
+            <div className="sun-min sun">
+              <div className="dot">
+                <img src="./images/teams_star.svg" alt="star"/>
+              </div>
+            </div>
+            <img src="./images/teams_circle.svg" className="circle-lg opacity-50 circle absolute top-[50%] translate-y-[-50%] translate-x-[-50%] left-[50%]" alt="circle"/>
+          </div>
         </div>
         {/*<div className='absolute w-full h-full bg-gradient-to-r from-slate-800 to-transparent'></div>*/}
         <div className="flex h-full w-full flex-col items-center justify-center">
