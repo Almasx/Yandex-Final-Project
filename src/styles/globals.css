@@ -225,3 +225,7 @@ to { transform:rotate(360deg) }
   height: 105%;
 }
 
+.swiper-pagination{
+  position: relative !important;
+  bottom: 0;
+}
