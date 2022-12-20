@@ -16,7 +16,7 @@ const Contact = () => {
               <header className="box-content whitespace-nowrap text-[160px] ">
                 WORK WITH US
               </header>
-              <img src="./Circle.svg" alt="" />
+              <Image src="./Circle.svg" alt="" />
             </>
           )}
         </div>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import clsx from "clsx";
 import type { ReactNode } from "react";
 
@@ -27,7 +28,7 @@ const CheckBox = ({ children, active, onClick }: CheckBoxProps) => {
             active && "!visible"
           )}
         >
-          <img src="./icons/Tick.svg" alt="" />
+          <Image src="./icons/Tick.svg" alt="" />
         </div>
       </label>
       <p
