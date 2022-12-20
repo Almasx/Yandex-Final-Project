@@ -29,7 +29,7 @@ const ProjectsSlider = () => {
         )}
       </Swiper>
       <div className="flex justify-center">
-        <div className="border-dark-gray mt-11 flex flex-row items-center gap-[6px] rounded-2xl border p-2">
+        <div className="dark:border-dark-gray border-light-gray-200 mt-11 flex flex-row items-center gap-[6px] rounded-2xl border p-2">
           <img src="./icons/ArrowRight.svg" alt="" className="arrow-right" />
           <div className="swiper-pagination opacity-60 min-w-[40px]"></div>
           <img src="./icons/ArrowLeft.svg" alt="" className="arrow-left" />

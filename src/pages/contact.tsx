@@ -25,9 +25,9 @@ const Contact = () => {
           project.
         </h3>
       </section>
-      <div className="col-span-12 bg-gradient-to-r from-black via-white/30  to-black pt-[1px]">
-        <form action="#" className="grid grid-cols-2 gap-8 bg-dark-bg py-16">
-          <Input label="Your name" name="name" />
+      <div className="col-span-12 bg-gradient-to-r dark:from-black dark:via-white/30  dark:to-black from-white via-black/30 to-white pt-[1px]">
+        <form action="#" className="grid grid-cols-2 gap-8 dark:bg-dark-bg bg-light-bg py-16">
+          <Input label="Your name" name="name" className="bg-transparent" />
           <Input label="Your email" name="email" type="email" />
           <Input
             label="Tell Us About The Project (Scope, Timeline, Budget)"

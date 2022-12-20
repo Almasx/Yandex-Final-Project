@@ -15,7 +15,7 @@ const CheckBox = ({ children, active, onClick }: CheckBoxProps) => {
           type="checkbox"
           className={clsx(
             "h-[28px] w-[28px] rotate-45 appearance-none rounded-lg border",
-            "border-gray-200 accent-white duration-200",
+            "dark:border-gray-200 border-light-gray-200 dark:accent-white accent-black duration-200",
             active && " !bg-primary !border-0"
           )}
           checked={active}
@@ -32,8 +32,8 @@ const CheckBox = ({ children, active, onClick }: CheckBoxProps) => {
       </label>
       <p
         className={clsx(
-          "relative text-xl font-light text-white",
-          !active && "text-white/30"
+          "relative text-xl font-light dark:text-white",
+          !active && "dark:text-white/30 text-black/30"
         )}
       >
         {children}
