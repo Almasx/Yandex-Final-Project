@@ -1,8 +1,23 @@
 import React from "react";
 import Button from "../components/atoms/Button";
-import ProjectsSlider from "../components/molecules/ProjectsSlider";
+import ProjectCard from "../components/molecules/ProjectsSlider/ProjectCard";
+import { trpc } from "../utils/trpc";
 
 const projects = () => {
+  const {
+    data,
+    fetchNextPage,
+    fetchPreviousPage,
+    hasNextPage,
+    hasPreviousPage,
+  } = trpc.projects.getProjects.useInfiniteQuery(
+    {
+      limit: 2,
+    },
+    {
+      getNextPageParam: (lastProject) => lastProject.nextId,
+    }
+  );
   return (
     <>
       <div className="col-span-6 col-start-4 mt-20 flex flex-col items-center">
@@ -15,7 +30,8 @@ const projects = () => {
           I want to work with you 🡥
         </Button>
       </div>
-      <ProjectsSlider />
+
+      {data && data.pages.map(() => <ProjectCard key={1} />)}
     </>
   );
 };
