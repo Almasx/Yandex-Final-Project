@@ -1,6 +1,10 @@
-import Navigation from "./Navigation";
+import Navigation from "./header";
 
-export default function Layout({ children }: { children: React.ReactNode }) {
+export default function MainLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <div className="bg-neutral-100 relative min-h-screen overflow-hidden dark:bg-dark-bg bg-light-bg">
       <Navigation />

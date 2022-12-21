@@ -1,33 +1,13 @@
-import ProjectCard from "./ProjectCard";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
 
-const ProjectsSlider = () => {
+interface IProjectsSliderProps {
+  projects: any[];
+  load: (e: any) => void;
+}
+
+const ProjectsSlider = ({ projects, load }: IProjectsSliderProps) => {
   return (
     <div className="col-span-full mt-20">
-      <Swiper
-        modules={[Navigation, Pagination]}
-        spaceBetween={50}
-        slidesPerView={2}
-        navigation={{
-          prevEl: ".arrow-right",
-          nextEl: ".arrow-left",
-          disabledClass: "disable",
-        }}
-        pagination={{
-          type: "fraction",
-          el: '.swiper-pagination'
-        }}
-      >
-        {Array(7).fill(
-          <SwiperSlide>
-            <ProjectCard />
-          </SwiperSlide>
-        )}
-      </Swiper>
+
       <div className="flex justify-center">
         <div className="dark:border-dark-gray border-light-gray-200 mt-11 flex flex-row items-center gap-[6px] rounded-2xl border p-2">
         <svg
