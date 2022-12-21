@@ -6,7 +6,7 @@ interface IWrapperProps {
 }
 const Wrapper = ({ children }: IWrapperProps) => {
   return (
-    <ul className="absolute bottom-8 z-20 mx-auto flex flex-row gap-8 rounded-2xl bg-dark-bg py-4  px-8">
+    <ul className="absolute bottom-16 z-20 mx-auto flex flex-row gap-8 rounded-2xl dark:bg-dark-bg bg-light-bg py-4  px-8">
       {children}
     </ul>
   );

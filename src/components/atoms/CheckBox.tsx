@@ -1,3 +1,4 @@
+import Image from "next/image";
 import clsx from "clsx";
 import type { ReactNode } from "react";
 
@@ -15,8 +16,8 @@ const CheckBox = ({ children, active, onClick }: CheckBoxProps) => {
           type="checkbox"
           className={clsx(
             "h-[28px] w-[28px] rotate-45 appearance-none rounded-lg border",
-            "border-gray-200 accent-white duration-300 ",
-            active && " !bg-gray-200/50"
+            "border-light-gray-200 accent-black duration-300 dark:border-gray-200 dark:accent-white ",
+            active && " !bg-light-gray-200/50 dark:!bg-gray-200/50"
           )}
           checked={active}
           onChange={onClick}
@@ -27,13 +28,13 @@ const CheckBox = ({ children, active, onClick }: CheckBoxProps) => {
             active && "!visible"
           )}
         >
-          <img src="./icons/Tick.svg" alt="" />
+          <Image src="./icons/Tick.svg" alt="" />
         </div>
       </label>
       <p
         className={clsx(
-          "relative text-xl font-light text-white duration-300",
-          !active && "text-white/30"
+          "relative text-xl font-light dark:text-white",
+          !active && "text-black/30 dark:text-white/30"
         )}
       >
         {children}

@@ -14,6 +14,9 @@ module.exports = {
       gray: { 100: "333333", 200: "#1A1A1A" },
       "white-text": "#FAFAFA",
       "dark-bg": "#0B0B0B",
+      "light-gray": { 100: "cccccc", 200: "#e5e5e5" },
+      "dark-text": "#050505",
+      "light-bg": "#f4f4f4",
     },
 
     keyframes: {

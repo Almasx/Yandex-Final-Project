@@ -61,9 +61,9 @@ const Contact = () => {
           project.
         </h3>
       </section>
-      <div className="col-span-12 bg-gradient-to-r from-black via-white/30  to-black pt-[1px]">
+      <div className="col-span-12 bg-gradient-to-r from-white via-black/30  to-white pt-[1px] dark:from-black dark:via-white/30 dark:to-black">
         <form
-          className="grid grid-cols-2 gap-8 bg-dark-bg py-16"
+          className="grid grid-cols-2 gap-8 bg-light-bg py-16 dark:bg-dark-bg"
           onSubmit={onSubmit}
         >
           <Input
