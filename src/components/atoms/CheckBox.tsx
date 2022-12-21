@@ -28,7 +28,7 @@ const CheckBox = ({ children, active, onClick }: CheckBoxProps) => {
             active && "!visible"
           )}
         >
-          <Image src="./icons/Tick.svg" alt="" />
+          <img src="./icons/Tick.svg" alt="" />
         </div>
       </label>
       <p
