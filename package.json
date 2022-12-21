@@ -5,10 +5,10 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
-    "postinstall": "prisma generate",
-    "db:push": "prisma dp push",
     "lint": "next lint",
-    "start": "next start"
+    "start": "next start",
+    "db:client": "prisma generate",
+    "db:push": "prisma db push"
   },
   "dependencies": {
     "@prisma/client": "^4.5.0",
@@ -28,6 +28,7 @@
     "zod": "^3.18.0"
   },
   "devDependencies": {
+    "@tanstack/react-query-devtools": "^4.20.4",
     "@types/node": "^18.0.0",
     "@types/react": "^18.0.14",
     "@types/react-dom": "^18.0.5",

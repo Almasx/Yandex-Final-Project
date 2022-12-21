@@ -6,10 +6,26 @@ generator client {
 }
 
 datasource db {
-  provider = "mongodb"
-  url      = env("DATABASE_URL")
+  provider     = "mysql"
+  url          = env("DATABASE_URL")
+  relationMode = "prisma"
+}
+
+model Offer {
+  id         Int      @id @default(autoincrement())
+  clientName String
+  email      String
+  message    String
+  createdAt  DateTime @default(now())
 }
 
 model Project {
-  id String @id @default(auto()) @map("_id") @db.ObjectId
+  id   Int    @id @default(autoincrement())
+  tech Tech[]
+}
+
+model Tech {
+  id       Int       @id @default(autoincrement())
+  title    String    @unique
+  projects Project[]
 }

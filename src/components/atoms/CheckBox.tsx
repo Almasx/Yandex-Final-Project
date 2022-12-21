@@ -15,15 +15,15 @@ const CheckBox = ({ children, active, onClick }: CheckBoxProps) => {
           type="checkbox"
           className={clsx(
             "h-[28px] w-[28px] rotate-45 appearance-none rounded-lg border",
-            "border-gray-200 accent-white duration-200",
-            active && " !bg-primary !border-0"
+            "border-gray-200 accent-white duration-300 ",
+            active && " !bg-gray-200/50"
           )}
           checked={active}
           onChange={onClick}
         />
         <div
           className={clsx(
-            "invisible absolute top-3 left-1/2 box-content -translate-x-1/2 -translate-y-1/2 transform",
+            "invisible absolute top-[14px] left-1/2 box-content -translate-x-1/2 -translate-y-1/2 transform",
             active && "!visible"
           )}
         >
@@ -32,7 +32,7 @@ const CheckBox = ({ children, active, onClick }: CheckBoxProps) => {
       </label>
       <p
         className={clsx(
-          "relative text-xl font-light text-white",
+          "relative text-xl font-light text-white duration-300",
           !active && "text-white/30"
         )}
       >
