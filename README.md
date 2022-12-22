@@ -22,6 +22,7 @@ This is the website of the web development team
 
 ## Working with the project
 To start the project:
+
 1
 ```
 git clone https://github.com/Almasx/Yandex-Final-Project/
