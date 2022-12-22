@@ -35,6 +35,7 @@ model Tech {
   id       Int       @id @default(autoincrement())
   title    String    @unique
   projects Project[]
+  author   Author[]
 }
 
 model Author {
@@ -44,4 +45,5 @@ model Author {
   link_github   String    @unique
   link_telegram String    @unique
   projects      Project[]
+  skills        Tech[]
 }
