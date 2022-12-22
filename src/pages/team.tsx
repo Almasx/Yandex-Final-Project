@@ -342,7 +342,6 @@ const Team = () => {
             </svg>
           </div>
         </div>
-        {/*<div className='absolute w-full h-full bg-gradient-to-r from-slate-800 to-transparent'></div>*/}
         <div className="flex h-full w-full flex-col items-center justify-center">
           <h2 className="mb-8 max-w-3xl text-center text-5xl font-bold text-dark-text dark:text-white-text md:mx-8">
             Meet our team of designers and software engineers
@@ -391,14 +390,33 @@ const Team = () => {
       <div className="col-span-full h-full overflow-clip">
         <div className="relative flex flex-col">
           <h2 className="mb-8 text-4xl font-bold ">Locations</h2>
-          <Location.Wrapper>
-            {Array(4).fill(
-              <Location.Point
-                name="Almas Saparov"
-                address="Uralsk, Kazakhstan"
+          <YMaps className="z-0 w-full">
+            <Map
+              defaultState={{ center: [55.76, 37.64], zoom: 7, controls: [] }}
+              className="w-100% z-10 flex h-[700px] w-full flex-col items-center"
+            >
+              <GeoObject
+                geometry={{
+                  type: "Point",
+                  coordinates: [55.8, 37.8],
+                }}
               />
-            )}
-          </Location.Wrapper>
+              <GeoObject
+                geometry={{
+                  type: "Point",
+                  coordinates: [56.9, 33.1],
+                }}
+              />
+              <Location.Wrapper>
+                {Array(4).fill(
+                  <Location.Point
+                    name="Almas Saparov"
+                    address="Uralsk, Kazakhstan"
+                  />
+                )}
+              </Location.Wrapper>
+            </Map>
+          </YMaps>
         </div>
         <p className="text-behind pointer-events-none select-none lg:hidden">
           AROUND THE WORLD
