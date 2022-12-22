@@ -21,7 +21,7 @@ const MemberSection = ({ members = [] }: { members?: Author[] }) => {
           <h3 className="text-4xl font-bold text-black/60 dark:text-white/60">
             We are team of{" "}
             <span className="text-black dark:text-white">2 engineers</span> and
-            <span className="text-black dark:text-white">2 designers</span>
+            <span className="text-black dark:text-white"> 2 designers</span>
           </h3>
           <p className="text-xl text-black dark:text-white">
             Fermentum tellus nec volutpat non enim consequat adcsddipiscing
