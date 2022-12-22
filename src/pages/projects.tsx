@@ -1,6 +1,7 @@
 import React, { useMemo } from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
 import Button from "../components/atoms/Button";
+import Mode from "../components/atoms/Mode";
 import ProjectCard from "../components/molecules/ProjectCard";
 import { trpc } from "../utils/trpc";
 
@@ -71,6 +72,12 @@ const projects = () => {
                 />
               );
             })}
+          <Mode/>
+          <Mode/>
+          <Mode/>
+          <Mode/>
+          <Mode/>
+          <Mode/>
         </InfiniteScroll>
       </div>
     </>
