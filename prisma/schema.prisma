@@ -26,6 +26,7 @@ model Project {
 
   tech        Tech[]
   link_github String @unique
+  link_image  String @unique
 
   author   Author @relation(fields: [authorId], references: [id])
   authorId Int
@@ -42,6 +43,8 @@ model Author {
   id            Int       @id @default(autoincrement())
   name          String    @unique
   quote         String    @default("'It's about drive, it's about power'")
+  location      String
+  link_pfp      String    @unique
   link_github   String    @unique
   link_telegram String    @unique
   projects      Project[]

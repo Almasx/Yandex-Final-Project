@@ -1,22 +1,46 @@
+import type { Author, Tech } from "@prisma/client";
+import Image from "next/image";
 import React from "react";
 import Github from "../icons/github";
 import Telegram from "../icons/telegram";
 
-const MemberCard = () => {
+interface IMemberCardProps {
+  name: string;
+  location: string;
+  link_pfp: string;
+  link_github: string;
+  link_telegram: string;
+}
+
+const MemberCard = ({
+  name,
+  link_pfp,
+  link_github,
+  link_telegram,
+  location,
+}: IMemberCardProps) => {
   return (
     <div className="flex grow flex-col rounded-xl border border-gray-100 p-2">
-      <div className="relative h-72 grow rounded-xl dark:bg-light-bg bg-black/30">
-        <div className="absolute right-2 top-2 flex items-center justify-center gap-2 rounded-2xl bg-light-bg/80 dark:bg-dark-bg p-1 opacity-80">
-          <Telegram/>
-          <Github/>
+      <div className="relative  grow rounded-xl">
+        <img className="h-60 w-full rounded-xl" src={link_pfp} alt={""} />
+
+        <div className="absolute right-2 top-2 flex items-center justify-center gap-2 rounded-2xl bg-light-bg/80 p-1 opacity-80 dark:bg-dark-bg">
+          <a href={link_github}>
+            <Github />
+          </a>
+          <a href={link_telegram}>
+            <Telegram />
+          </a>
         </div>
       </div>
       <div className="flex flex-col gap-2 p-3 text-base">
         <div className="flex flex-row justify-between ">
-          Almas Saparov
-          <span className="dark:text-white/60 text-black/60">Uralsk, KZ</span>
+          {name}
+          <span className="text-black/60 dark:text-white/60">{location}</span>
         </div>
-        <p className="dark:text-white text-black">HTML, CSS, JavaScript, React</p>
+        <p className="text-black dark:text-white">
+          {...["React", "Typesrcipt"].map((tech) => tech + ", ")}
+        </p>
       </div>
     </div>
   );

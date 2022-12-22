@@ -9,7 +9,8 @@
     "start": "next start",
     "db:client": "prisma generate",
     "db:push": "prisma db push",
-    "db:studio": "npx prisma studio"
+    "db:studio": "prisma studio",
+    "db:migrate": "prisma migrate dev"
   },
   "dependencies": {
     "@prisma/client": "^4.5.0",

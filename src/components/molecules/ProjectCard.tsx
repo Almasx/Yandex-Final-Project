@@ -1,11 +1,12 @@
-import type { Tech } from "@prisma/client";
+import type { Author, Tech } from "@prisma/client";
 import Badge from "../atoms/Badge";
 
 interface IProjectCardProps {
   title: string;
   description: string;
   link_github: string;
-  author: string;
+  link_image: string;
+  author: Author;
   tech_stack: Tech[];
 }
 
@@ -13,6 +14,7 @@ const ProjectCard = ({
   title,
   description,
   link_github,
+  link_image,
   author,
   tech_stack,
 }: IProjectCardProps) => {
@@ -20,8 +22,8 @@ const ProjectCard = ({
     <div className="border-gray relative w-full rounded-md border p-4">
       <div className=" h-60 w-full rounded-md bg-black/60 dark:bg-white/30" />
       <div className="absolute right-16 top-6 flex rounded-xl bg-light-bg py-1 px-3 opacity-80 dark:bg-dark-bg">
-        <img src="./icons/User.png" alt="" />
-        <span className="ml-2 text-black dark:text-white">{author}</span>
+        <img src={author.link_pfp} alt="" className="h-6 w-6 rounded-full" />
+        <span className="ml-2 text-black dark:text-white">{author.name}</span>
       </div>
       <a
         href={link_github}

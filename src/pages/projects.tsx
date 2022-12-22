@@ -50,15 +50,23 @@ const projects = () => {
         >
           {projects &&
             projects.projects.map((project) => {
-              const { title, description, id, link_github, author, tech } =
-                project;
+              const {
+                title,
+                description,
+                id,
+                link_github,
+                author,
+                tech,
+                link_image,
+              } = project;
               return (
                 <ProjectCard
                   key={id}
                   title={title}
                   description={description}
                   link_github={link_github}
-                  author={author.name}
+                  link_image={link_image}
+                  author={author}
                   tech_stack={tech}
                 />
               );
