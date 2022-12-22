@@ -36,7 +36,6 @@ npm i
 npm run build
 ```
 4
-2
 ```
 npm start
 ```
