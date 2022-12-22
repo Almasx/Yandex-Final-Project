@@ -9,8 +9,6 @@ import Badge from "./Badge";
 export interface IButtonProps {
   condition?: "loading" | "loaded";
   type?: "projectCard";
-  children: ReactNode;
-  className?: string;
 }
 
 const Mode = ({
@@ -60,6 +58,7 @@ const Mode = ({
       );
     }
   }
+  return null
 };
 
 export default Mode;
