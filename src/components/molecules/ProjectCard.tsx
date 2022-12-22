@@ -1,5 +1,6 @@
 import type { Author, Tech } from "@prisma/client";
 import Badge from "../atoms/Badge";
+import Github from "../icons/github";
 
 interface IProjectCardProps {
   title: string;
@@ -29,7 +30,7 @@ const ProjectCard = ({
         href={link_github}
         className="absolute right-6 top-6 flex h-8 w-8 items-center justify-center rounded-2xl bg-light-bg p-1 opacity-80 dark:bg-dark-bg"
       >
-        <img src="/icons/github.svg" alt="" />
+        <Github/>
       </a>
       <div className="mt-4 flex flex-col gap-3 py-1">
         <div className="flex items-center justify-between">
