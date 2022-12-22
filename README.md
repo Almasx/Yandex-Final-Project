@@ -1,28 +1,44 @@
-# Create T3 App
+# Vatrushki web team 
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+This is a website of the web development team
 
-## What's next? How do I make an app with this?
+## Project functionality
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+- information about us
+- contact us form
+- dark and light theme
+- our projects slider
+- map with our addresses
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+## Technology stack
 
 - [Next.js](https://nextjs.org)
 - [NextAuth.js](https://next-auth.js.org)
 - [Prisma](https://prisma.io)
 - [Tailwind CSS](https://tailwindcss.com)
 - [tRPC](https://trpc.io)
+- [Vercel](https://create.t3.gg/en/deployment/vercel)
+- [Docker](https://create.t3.gg/en/deployment/docker)
 
-## Learn More
+## Working with the project
+To start the project:
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+1
+```
+git clone https://github.com/Almasx/Yandex-Final-Project/
+```
+2
+```
+npm i --force
+```
+3
+```
+npm run build
+```
+4
+```
+npm start
+```
+## Links
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
-
-## How do I deploy this?
-
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
