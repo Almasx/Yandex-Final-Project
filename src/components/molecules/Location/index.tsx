@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import Point from "./point";
+import Point from "./Point";
 
 interface IWrapperProps {
   children: ReactNode;
