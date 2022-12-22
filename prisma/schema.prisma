@@ -20,12 +20,28 @@ model Offer {
 }
 
 model Project {
-  id   Int    @id @default(autoincrement())
-  tech Tech[]
+  id          Int    @id @default(autoincrement())
+  title       String @unique
+  description String
+
+  tech        Tech[]
+  link_github String @unique
+
+  author   Author @relation(fields: [authorId], references: [id])
+  authorId Int
 }
 
 model Tech {
   id       Int       @id @default(autoincrement())
   title    String    @unique
   projects Project[]
+}
+
+model Author {
+  id            Int       @id @default(autoincrement())
+  name          String    @unique
+  quote         String    @default("'It's about drive, it's about power'")
+  link_github   String    @unique
+  link_telegram String    @unique
+  projects      Project[]
 }
