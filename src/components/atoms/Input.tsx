@@ -64,8 +64,8 @@ const Input = ({
           }}
           placeholder={placeholder}
           className={clsx(
-            "ease peer w-full rounded-[20px] border border-gray-100 dark:bg-dark-bg bg-light-bg p-6 text-xl",
-            "dark:text-white text-black duration-300 dark:placeholder:text-white/30 placeholder:text-black/30  dark:focus:border-white dark:border-black focus:outline-none ",
+            "ease peer w-full rounded-[20px] border border-gray-100 bg-light-bg p-6 text-xl dark:bg-dark-bg",
+            "text-black duration-300 placeholder:text-black/30 focus:outline-none dark:border-black  dark:text-white dark:placeholder:text-white/30 dark:focus:border-white ",
             startIcon !== null && "pl-12"
           )}
         />
@@ -80,8 +80,8 @@ const Input = ({
           }}
           placeholder={placeholder}
           className={clsx(
-            "ease peer w-full rounded-[20px] border border-gray-100 dark:bg-dark-bg bg-light-bg p-6 text-xl",
-            "dark:text-white text-black duration-300 dark:placeholder:text-white/30 placeholder:text-black/30 dark:focus:border-white focus:border-black focus:outline-none ",
+            "ease peer w-full rounded-[20px] border border-gray-100 bg-light-bg p-6 text-xl dark:bg-dark-bg",
+            "text-black duration-300 placeholder:text-black/30 focus:border-black focus:outline-none dark:text-white dark:placeholder:text-white/30 dark:focus:border-white ",
             startIcon !== null && "pl-12"
           )}
         />
@@ -92,14 +92,14 @@ const Input = ({
           htmlFor={name}
           className={clsx(
             "peer-placeholder-shown:bg-transparent absolute top-1.5 z-10 origin-[0] -translate-y-4",
-            "translate-x-3 transform rounded-full dark:bg-dark-bg bg-light-bg px-1.5 text-xs",
-            "dark:text-white/30 text-black/30 duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2",
+            "translate-x-3 transform rounded-full bg-light-bg px-1.5 text-xs dark:bg-dark-bg",
+            "text-black/30 duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 dark:text-white/30",
             " peer-placeholder-shown:translate-x-4 ",
             "peer-placeholder-shown:text-lg ",
-            "dark:peer-placeholder-shown:text-white/30 peer-placeholder-shown:text-black/30 peer-focus:top-1.5 peer-focus:-translate-y-4 ",
+            "peer-placeholder-shown:text-black/30 peer-focus:top-1.5 peer-focus:-translate-y-4 dark:peer-placeholder-shown:text-white/30 ",
             "peer-focus:translate-x-3",
-            "peer-focus:transform dark:peer-focus:bg-dark-bg peer-focus:bg-light-bg peer-focus:px-1.5",
-            "peer-focus:text-sm dark:peer-focus:text-white peer-focus:text-black",
+            "peer-focus:transform peer-focus:bg-light-bg peer-focus:px-1.5 dark:peer-focus:bg-dark-bg",
+            "peer-focus:text-sm peer-focus:text-black dark:peer-focus:text-white",
             type === "textarea" &&
               "peer-placeholder-shown:top-6 peer-placeholder-shown:-translate-y-0"
           )}

@@ -1,9 +1,13 @@
 import React from "react";
 
-const Badge = () => {
+interface IBadgeProps {
+  text: string;
+}
+
+const Badge = ({ text }: IBadgeProps) => {
   return (
-    <div className="rounded-md border dark:border-gray-200 border-light-gray-200 py-1 px-2 text-xs dark:text-white/60 text-black/60">
-      Badge
+    <div className="rounded-lg border border-light-gray-200 py-[5px] px-[10px] text-sm font-light text-black/60 dark:border-gray-200 dark:text-white/60">
+      {text}
     </div>
   );
 };

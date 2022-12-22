@@ -13,7 +13,7 @@ export const projectRouter = router({
       const limit = input.limit ?? 2;
       const { cursor } = input;
       const projects = await ctx.prisma.project.findMany({
-        include: { tech: true },
+        include: { tech: true, author: true },
         cursor: cursor ? { id: cursor } : undefined,
         take: limit + 1,
       });

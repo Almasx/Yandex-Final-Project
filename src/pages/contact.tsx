@@ -6,6 +6,7 @@ import Button from "../components/atoms/Button";
 import CheckBox from "../components/atoms/CheckBox";
 import Input from "../components/atoms/Input";
 import { trpc } from "../utils/trpc";
+import Image from "next/image";
 
 const formSchema = object({
   clientName: string({ required_error: "Name is required" }),
