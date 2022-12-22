@@ -24,7 +24,6 @@ const Team = () => {
             <Circle size='105'/>
           </div>
         </div>
-        {/*<div className='absolute w-full h-full bg-gradient-to-r from-slate-800 to-transparent'></div>*/}
         <div className="flex h-full w-full flex-col items-center justify-center">
           <h2 className="mb-8 max-w-3xl text-center text-5xl font-bold dark:text-white-text text-dark-text md:mx-8">
             Meet our team of designers and software engineers
@@ -88,7 +87,7 @@ const Team = () => {
                   />
                 )}
               </Location.Wrapper>
-            </Map>{" "}
+</Map>
           </YMaps>
         </div>
         <p className="text-behind pointer-events-none select-none lg:hidden">

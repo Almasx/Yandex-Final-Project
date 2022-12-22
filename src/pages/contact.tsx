@@ -7,6 +7,7 @@ import CheckBox from "../components/atoms/CheckBox";
 import Input from "../components/atoms/Input";
 import { trpc } from "../utils/trpc";
 import Image from "next/image";
+import Link from "next/link";
 
 const formSchema = object({
   clientName: string({ required_error: "Name is required" }),
@@ -112,7 +113,10 @@ const Contact = () => {
               }))
             }
           >
-            I give permission for analyzing data
+            I give permission for{" "}
+            <Link href="policy" className="underline">
+              analyzing data
+            </Link>
           </CheckBox>
           <div className="col-span-full">
             <Button
