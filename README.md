@@ -1,6 +1,6 @@
 # Vatrushki web team 
 
-This is the website of the web development team
+This is a website of the web development team
 
 ## Project functionality
 
