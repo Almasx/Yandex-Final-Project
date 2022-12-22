@@ -21,8 +21,8 @@ const MemberCard = ({
 }: IMemberCardProps) => {
   return (
     <div className="flex grow flex-col rounded-xl border border-gray-100 p-2">
-      <div className="relative  grow rounded-xl">
-        <img className="h-60 w-full rounded-xl" src={link_pfp} alt={""} />
+      <div className="relative h-60 grow rounded-xl overflow-hidden">
+        <img className="w-full rounded-xl" src={link_pfp} alt={""} />
 
         <div className="absolute right-2 top-2 flex items-center justify-center gap-2 rounded-2xl bg-light-bg/80 p-1 opacity-80 dark:bg-dark-bg">
           <a href={link_github}>
