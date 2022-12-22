@@ -40,5 +40,6 @@ npm run build
 npm start
 ```
 ## Links
+-[project](https://yandex-final-project.vercel.app/ru)
 
-
+-[private policy](https://yandex-final-project.vercel.app/ru/policy)
