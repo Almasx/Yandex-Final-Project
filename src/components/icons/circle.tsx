@@ -2,7 +2,7 @@ const Circle = ({ size }: { size: string }) => {
   return (
     <svg
       fill="none"
-      className={`opacity-70 w-[${size}%] absolute top-[50%] translate-y-[-50%] h-[${size}%] left-[50%] translate-x-[-50%]`}
+      className={`opacity-70 circle-${size} absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%]`}
       viewBox="0 0 479 477"
       xmlns="http://www.w3.org/2000/svg"
     >

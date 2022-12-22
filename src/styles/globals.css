@@ -220,6 +220,18 @@ to { transform:rotate(360deg) }
   max-width: 105%;
   height: 105%;
 }
+.circle-md{
+  width: 85%;
+  max-width: 85%;
+  height: 85%;
+}
+
+.circle-sm{
+  width: 65%;
+  max-width: 65%;
+  height: 65%;
+}
+
 
 .swiper-pagination{
   position: relative !important;

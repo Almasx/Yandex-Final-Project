@@ -7,19 +7,19 @@ const HeroSection = () => {
     <section className="relative col-span-full h-screen ">
       <div className="absolute h-full w-full scale-110">
         <div className="absolute inset-0 m-auto aspect-square h-5/6 object-cover">
-          <Circle size="85" />
+          <Circle size="md" />
           <div className="sun">
             <div className="dot">
               <Star />
             </div>
           </div>
-          <Circle size="65" />
+          <Circle size="sm" />
           <div className="sun-min sun">
             <div className="dot">
               <Star />
             </div>
           </div>
-          <Circle size="105" />
+          <Circle size="lg" />
         </div>
       </div>
       <div className="flex h-full w-full flex-col items-center justify-center">
