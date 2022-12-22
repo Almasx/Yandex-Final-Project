@@ -29,7 +29,7 @@ git clone https://github.com/Almasx/Yandex-Final-Project/
 ```
 2
 ```
-npm i
+npm i --force
 ```
 3
 ```
