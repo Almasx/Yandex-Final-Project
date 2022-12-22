@@ -215,10 +215,6 @@ to { transform:rotate(360deg) }
   to { transform:rotate(0deg) } 
   }
 
-.circle{
-  width: 85%;
-  height: 85%;
-}
 .circle-lg{
   width: 105%;
   max-width: 105%;
