@@ -58,7 +58,7 @@ const Contact = () => {
               <header className="box-content whitespace-nowrap text-[160px] ">
                 {t`bg`.toUpperCase()}
               </header>
-              <img src="./Circle.svg" alt="" />
+              <img className="dark:invert" src="/Circle.svg" alt="white circle" />
             </>
           )}
         </div>

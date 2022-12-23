@@ -32,7 +32,7 @@ const Navigation = () => {
           <Link
             href="/"
           >
-            <img className="dark:invert" src="/icons/header-logo.svg" alt="" />
+            <img className="dark:invert" src="/icons/header-logo.svg" alt="header logo icon" />
           </Link>
         </div>
         <div className="flex flex-row gap-5 font-light capitalize text-black/30 dark:text-white/30 ">

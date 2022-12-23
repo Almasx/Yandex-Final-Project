@@ -22,14 +22,14 @@ const ProjectCard = ({
     <div className="border-gray relative w-full rounded-md border p-4">
       <div className=" h-60 w-full rounded-md bg-black/60 dark:bg-white/30" />
       <div className="absolute right-16 top-6 flex rounded-xl bg-light-bg py-1 px-3 opacity-80 dark:bg-dark-bg">
-        <img src={author.link_pfp} alt="" className="h-6 w-6 rounded-full" />
+        <img src={author.link_pfp} alt="author photo" className="h-6 w-6 rounded-full" />
         <span className="ml-2 text-black dark:text-white">{author.name}</span>
       </div>
       <a
         href={link_github}
         className="absolute right-6 top-6 flex h-8 w-8 items-center justify-center rounded-2xl bg-light-bg p-1 opacity-80 dark:bg-dark-bg"
       >
-        <img className="dark:invert" src="/icons/github.svg" alt="" />
+        <img className="dark:invert" src="/icons/github.svg" alt="github icon" />
       </a>
       <div className="mt-4 flex flex-col gap-3 py-1">
         <div className="flex items-center justify-between">

@@ -25,19 +25,19 @@ const Team = () => {
       <section className="relative col-span-full h-screen">
         <div className="absolute h-full w-full scale-110">
           <div className="absolute inset-0 m-auto aspect-square h-5/6 object-cover dark:invert">
-            <img src="/icons/circle.svg" className="opacity-70 circle-md absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%]" alt="" />
+            <img src="/icons/circle.svg" className="opacity-70 circle-md absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%]" alt="white circle" />
             <div className="sun">
               <div className="dot">
-                <img src="/icons/star.svg" className="w-full" alt="" />
+                <img src="/icons/star.svg" className="w-full" alt="star" />
               </div>
             </div>
-            <img src="/icons/circle.svg" className="opacity-70 circle-sm absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%]" alt="" />
+            <img src="/icons/circle.svg" className="opacity-70 circle-sm absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%]" alt="white circle" />
             <div className="sun-min sun">
               <div className="dot">
-                <img src="/icons/star.svg" className="w-full" alt="" />
+                <img src="/icons/star.svg" className="w-full" alt="star" />
               </div>
             </div>
-            <img src="/icons/circle.svg" className="opacity-70 circle-lg absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%]" alt="" />
+            <img src="/icons/circle.svg" className="opacity-70 circle-lg absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%]" alt="white circle" />
           </div>
         </div>
         <div className="flex h-full w-full flex-col items-center justify-center">
@@ -90,7 +90,7 @@ const Team = () => {
         </p>
       </section>
       <div className="dark:invert col-span-full">
-        <img src="/icons/footer-logo.svg" alt="" />
+        <img src="/icons/footer-logo.svg" alt="footer logo" />
       </div>
     </>
   );
