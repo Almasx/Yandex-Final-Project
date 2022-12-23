@@ -56,7 +56,7 @@ const Button = ({
             " text-white  dark:text-dark-bg ", // typography
           ],
           variant === "secondary" && [
-            "border-stroke-200 border", // box model
+            "border-stroke-200 border hover:bg-gray-100/10 dark:hover:bg-light-gray-200/10", // box model
             "bg-transparent hover:bg-surface/5", // background
           ],
           variant === "text" && [

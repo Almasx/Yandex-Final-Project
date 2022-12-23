@@ -22,7 +22,7 @@ const Team = () => {
   const { data } = trpc.author.getAll.useQuery();
   return (
     <>
-      <section className="relative col-span-full h-screen ">
+      <section className="relative col-span-full h-screen">
         <div className="absolute h-full w-full scale-110">
           <div className="absolute inset-0 m-auto aspect-square h-5/6 object-cover dark:invert">
             <img src="/icons/circle.svg" className="opacity-70 circle-md absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%]" alt="" />
