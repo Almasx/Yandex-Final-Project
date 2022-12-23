@@ -44,10 +44,10 @@ const Team = () => {
           </div>
         </div>
         <div className="flex h-full w-full flex-col items-center justify-center">
-          <h2 className="mb-8 max-w-3xl text-center text-5xl font-bold text-dark-text dark:text-white-text md:mx-8">
+          <h2 className="mb-8 max-w-3xl text-center text-5xl font-bold text-primary-dark dark:text-primary-light md:mx-8">
             {t`hero.headline`}
           </h2>
-          <p className="mb-8 max-w-lg text-center text-black/30 dark:text-white/30 md:mx-5 lg:text-lg">
+          <p className="mb-8 max-w-lg text-center text-primary-dark/30 dark:text-primary-light/30 md:mx-5 lg:text-lg">
             {t`hero.subheading`}
           </p>
         </div>
@@ -74,7 +74,7 @@ const Team = () => {
                 geometry={{
                   type: "Point",
                   coordinates: [56.9, 33.1],
-                  iconCaption: 'Интересное место'
+                  iconCaption: "Интересное место",
                 }}
               />
               <Location.Wrapper>

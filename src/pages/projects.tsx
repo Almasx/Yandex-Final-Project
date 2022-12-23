@@ -43,10 +43,10 @@ const projects = () => {
   return (
     <>
       <div className="col-span-6 col-start-4 mt-20 flex flex-col items-center">
-        <h1 className="text-6xl font-bold text-black dark:text-white text-center">
+        <h1 className="dark:text-primary-light text-primary-dark text-center text-6xl font-bold">
           {t`headline`}
         </h1>
-        <p className="mt-1 max-w-[512px] text-center text-xl font-normal text-black opacity-60 dark:text-white">
+        <p className="dark:text-primary-light text-primary-dark mt-1 max-w-[512px] text-center text-xl font-normal opacity-60">
           {t`text`}
         </p>
         <Button className="mt-4 rounded-lg  font-medium">{t`cta`}</Button>
@@ -85,10 +85,10 @@ const projects = () => {
                 />
               );
             })}
-          <Mode/>
-          <Mode/>
-          <Mode/>
-          <Mode/>
+          <Mode />
+          <Mode />
+          <Mode />
+          <Mode />
         </InfiniteScroll>
       </div>
     </>
