@@ -25,7 +25,7 @@ To start the project:
 
 1
 ```
-git clone https://github.com/Almasx/Yandex-Final-Project/
+git clone https://github.com/Almasx/Yandex-Final-Project.git
 ```
 2
 ```
