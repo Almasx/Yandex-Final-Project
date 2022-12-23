@@ -8,8 +8,8 @@ import Star from "../components/icons/star";
 
 import { YMaps, Map, GeoObject } from "react-yandex-maps";
 import Location from "../components/molecules/Location";
-import MemberCard from "../components/molecules/MemberCard";
 import Circle from "../components/icons/circle";
+import MemberSection from "../components/templates/MemberSection";
 
 export const getStaticProps = async ({ locale }: { locale: string }) => ({
   props: {
@@ -23,7 +23,6 @@ export const getStaticProps = async ({ locale }: { locale: string }) => ({
 const Team = () => {
   const { t } = useTranslation("team");
   const { data } = trpc.author.getAll.useQuery();
-
   return (
     <>
       <section className="relative col-span-full h-screen ">
@@ -54,34 +53,8 @@ const Team = () => {
         </div>
       </section>
 
-      <div className="relative col-span-full bg-gradient-to-r from-white via-black/30 to-white pt-[1px] dark:from-black dark:via-white/30 dark:to-black">
-        <section className="flex  flex-col gap-16 bg-light-bg py-16 dark:bg-dark-bg">
-          <div className="flex flex-row justify-between">
-            {data &&
-              data.map((member) => (
-                <div
-                  className="span text-8xl font-bold text-light-gray-200 dark:text-gray-200"
-                  key={member.id}
-                >
-                  {member.name}
-                </div>
-              ))}
-          </div>
-          <div className="flex w-[500px] flex-col gap-6">
-            <h3 className="text-4xl font-bold text-black/60 dark:text-white/60">
-              We are team of{" "}
-              <span className="text-black dark:text-white">2 engineers</span>{" "}
-              and
-              <span className="text-black dark:text-white">2 designers</span>
-            </h3>
-            <p className="text-xl text-black dark:text-white">{t`member.text`}</p>
-          </div>
-          <div className="grid grid-cols-4  gap-6">
-            {data &&
-              data.map((member) => <MemberCard key={member.id} {...member} />)}
-          </div>
-        </section>
-      </div>
+      {!data && <MemberSection loading={true} />}
+      {data && <MemberSection members={data} loading={false} />}
 
       <section className="col-span-full mb-4 h-full overflow-clip">
         <div className="relative flex flex-col">
@@ -118,7 +91,6 @@ const Team = () => {
           AROUND THE WORLD
         </p>
       </section>
-
       <footer className="col-span-full -mx-8">
         <FLogo />
       </footer>

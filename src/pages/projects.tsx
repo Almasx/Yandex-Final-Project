@@ -3,6 +3,7 @@ import { trpc } from "../utils/trpc";
 
 import InfiniteScroll from "react-infinite-scroll-component";
 import Button from "../components/atoms/Button";
+import Mode from "../components/atoms/Mode";
 import ProjectCard from "../components/molecules/ProjectCard";
 
 import { useTranslation } from "next-i18next";
@@ -84,6 +85,10 @@ const projects = () => {
                 />
               );
             })}
+          <Mode/>
+          <Mode/>
+          <Mode/>
+          <Mode/>
         </InfiniteScroll>
       </div>
     </>
