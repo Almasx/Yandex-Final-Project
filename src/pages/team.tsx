@@ -1,14 +1,11 @@
 import { trpc } from "../utils/trpc";
-import FLogo from "../components/icons/footer-logo";
 
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import nextI18nConfig from "../../next-i18next.config.mjs";
 import { useTranslation } from "next-i18next";
-import Star from "../components/icons/star";
 
 import { YMaps, Map, GeoObject } from "react-yandex-maps";
 import Location from "../components/molecules/Location";
-import Circle from "../components/icons/circle";
 import MemberSection from "../components/templates/MemberSection";
 
 export const getStaticProps = async ({ locale }: { locale: string }) => ({
@@ -27,20 +24,20 @@ const Team = () => {
     <>
       <section className="relative col-span-full h-screen ">
         <div className="absolute h-full w-full scale-110">
-          <div className="absolute inset-0 m-auto aspect-square h-5/6 object-cover">
-            <Circle size="md" />
+          <div className="absolute inset-0 m-auto aspect-square h-5/6 object-cover dark:invert">
+            <img src="/icons/circle.svg" className="opacity-70 circle-md absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%]" alt="" />
             <div className="sun">
               <div className="dot">
-                <Star />
+                <img src="/icons/star.svg" className="w-full" alt="" />
               </div>
             </div>
-            <Circle size="sm" />
+            <img src="/icons/circle.svg" className="opacity-70 circle-sm absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%]" alt="" />
             <div className="sun-min sun">
               <div className="dot">
-                <Star />
+                <img src="/icons/star.svg" className="w-full" alt="" />
               </div>
             </div>
-            <Circle size="lg" />
+            <img src="/icons/circle.svg" className="opacity-70 circle-lg absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%]" alt="" />
           </div>
         </div>
         <div className="flex h-full w-full flex-col items-center justify-center">
@@ -92,7 +89,9 @@ const Team = () => {
           AROUND THE WORLD
         </p>
       </section>
-      <FLogo />
+      <div className="dark:invert col-span-full">
+        <img src="/icons/footer-logo.svg" alt="" />
+      </div>
     </>
   );
 };

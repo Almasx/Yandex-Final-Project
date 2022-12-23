@@ -1,7 +1,5 @@
 "use client";
 import React from "react";
-import Github from "../icons/github";
-import Telegram from "../icons/telegram";
 
 export interface IButtonProps {
   condition?: "loading" | "loaded";
@@ -25,7 +23,7 @@ const Mode = ({
             href="#"
             className="absolute right-6 top-6 flex h-8 w-8 items-center justify-center rounded-2xl bg-light-bg p-1 opacity-80 dark:bg-dark-bg"
           >
-            <Github/>
+            <img className="dark:invert" src="/icons/github.svg" alt="" />
           </a>
           <div className="mt-4 flex flex-col gap-3 py-1">
             <div className="flex items`-center justify-between">
@@ -62,10 +60,10 @@ const Mode = ({
             <div className="w-full h-full rounded-xl bg-black/60 dark:bg-white/30 animate-pulse" />
             <div className="absolute right-2 top-2 flex items-center justify-center gap-2 rounded-2xl bg-light-bg/80 p-1 opacity-80 dark:bg-dark-bg">
               <a href="#">
-                <Github />
+                <img className="dark:invert" src="/icons/github.svg" alt="" />
               </a>
               <a href="#">
-                <Telegram />
+                <img src="/icons/telegram.svg" alt="" />
               </a>
             </div>
           </div>

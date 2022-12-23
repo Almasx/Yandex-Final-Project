@@ -1,6 +1,4 @@
 import React from "react";
-import Github from "../icons/github";
-import Telegram from "../icons/telegram";
 
 interface IMemberCardProps {
   name: string;
@@ -24,10 +22,10 @@ const MemberCard = ({
 
         <div className="absolute right-2 top-2 flex items-center justify-center gap-2 rounded-2xl bg-light-bg/80 p-1 opacity-80 dark:bg-dark-bg">
           <a href={link_github}>
-            <Github />
+            <img className="dark:invert" src="/icons/github.svg" alt="" />
           </a>
           <a href={link_telegram}>
-            <Telegram />
+            <img className="dark:invert" src="/icons/telegram.svg" alt="" />
           </a>
         </div>
       </div>
