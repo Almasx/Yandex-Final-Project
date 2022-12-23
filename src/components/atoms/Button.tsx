@@ -52,8 +52,8 @@ const Button = ({
         className,
         [
           variant === "primary" && [
-            "dark:bg-white", // background
-            "dark:text-black ", // typography
+            "bg-black dark:bg-white ", // background
+            " text-white  dark:text-dark-bg ", // typography
           ],
           variant === "secondary" && [
             "border-stroke-200 border", // box model

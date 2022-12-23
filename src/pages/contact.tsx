@@ -1,24 +1,31 @@
 import type { ChangeEvent } from "react";
+import { trpc } from "../utils/trpc";
 import { useState } from "react";
+
 import { literal } from "zod";
 import { object, string } from "zod";
+import Link from "next/link";
+
 import Button from "../components/atoms/Button";
 import CheckBox from "../components/atoms/CheckBox";
 import Input from "../components/atoms/Input";
-import { trpc } from "../utils/trpc";
-import Image from "next/image";
-import Link from "next/link";
 
-const formSchema = object({
-  clientName: string({ required_error: "Name is required" }),
-  email: string({ required_error: "Email is required" }).email(
-    "Must be a valid email"
-  ),
-  message: string({ required_error: "Message is required" }),
-  permission: literal(true),
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import nextI18nConfig from "../../next-i18next.config.mjs";
+
+export const getStaticProps = async ({ locale }: { locale: string }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ["contact"], nextI18nConfig, [
+      "en",
+      "ru",
+    ])),
+  },
 });
 
 const Contact = () => {
+  const { t } = useTranslation("contact");
+
   const postOffer = trpc.offer.postOffer.useMutation();
   const [formData, setFormData] = useState({
     clientName: "",
@@ -29,10 +36,7 @@ const Contact = () => {
 
   const onSubmit = (event: any) => {
     event.preventDefault();
-
-    const form = formSchema.parse(formData);
-    postOffer.mutate(form);
-    console.log(form);
+    postOffer.mutate(formData);
 
     setFormData({
       clientName: "",
@@ -52,16 +56,13 @@ const Contact = () => {
           {Array(4).fill(
             <>
               <header className="box-content whitespace-nowrap text-[160px] ">
-                WORK WITH US
+                {t`bg`.toUpperCase()}
               </header>
               <img src="./Circle.svg" alt="" />
             </>
           )}
         </div>
-        <h3 className=" text-5xl">
-          Always good to see you. Drop us a note about a application, or landing
-          project.
-        </h3>
+        <h3 className=" text-5xl">{t`headline`}</h3>
       </section>
       <div className="col-span-12 bg-gradient-to-r from-white via-black/30  to-white pt-[1px] dark:from-black dark:via-white/30 dark:to-black">
         <form
@@ -69,7 +70,7 @@ const Contact = () => {
           onSubmit={onSubmit}
         >
           <Input
-            label="Your name"
+            label={t`form.name`}
             name="name"
             value={formData.clientName}
             onChange={(e) =>
@@ -80,7 +81,7 @@ const Contact = () => {
             }
           />
           <Input
-            label="Your email"
+            label={t`form.email`}
             name="email"
             type="email"
             value={formData.email}
@@ -92,7 +93,7 @@ const Contact = () => {
             }
           />
           <Input
-            label="Tell Us About The Project (Scope, Timeline, Budget)"
+            label={t`form.message`}
             name="message"
             type="textarea"
             className="col-span-full"
@@ -124,7 +125,7 @@ const Contact = () => {
               variant="secondary"
               type="submit"
             >
-              Submit
+              {t`form.submit`}
             </Button>
           </div>
         </form>

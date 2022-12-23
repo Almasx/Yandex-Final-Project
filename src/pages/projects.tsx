@@ -1,10 +1,26 @@
 import React, { useMemo } from "react";
+import { trpc } from "../utils/trpc";
+
 import InfiniteScroll from "react-infinite-scroll-component";
 import Button from "../components/atoms/Button";
 import ProjectCard from "../components/molecules/ProjectCard";
-import { trpc } from "../utils/trpc";
+
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import nextI18nConfig from "../../next-i18next.config.mjs";
+
+export const getServerSideProps = async ({ locale }: { locale: string }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ["projects"], nextI18nConfig, [
+      "en",
+      "ru",
+    ])),
+  },
+});
 
 const projects = () => {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const { t } = useTranslation("projects");
   const { data, fetchNextPage, hasNextPage } =
     trpc.projects.getProjects.useInfiniteQuery(
       { limit: 2 },
@@ -27,15 +43,12 @@ const projects = () => {
     <>
       <div className="col-span-6 col-start-4 mt-20 flex flex-col items-center">
         <h1 className="text-6xl font-bold text-black dark:text-white">
-          Works we proud of
+          {t`headline`}
         </h1>
-        <span className="mt-5 max-w-[512px] text-center text-xl font-normal text-black opacity-60 dark:text-white">
-          Fermentum tellus nec volutpat non enim consequat adcsddipiscing
-          euismod. Mi et tortor dolor nec eu
-        </span>
-        <Button className="mt-4 rounded-lg bg-black font-medium text-white dark:bg-white dark:text-dark-bg">
-          I want to work with you 🡥
-        </Button>
+        <p className="mt-1 max-w-[512px] text-center text-xl font-normal text-black opacity-60 dark:text-white">
+          {t`text`}
+        </p>
+        <Button className="mt-4 rounded-lg  font-medium">{t`cta`}</Button>
       </div>
       <div className="col-span-full">
         <InfiniteScroll

@@ -1,0 +1,8 @@
+{
+  "nav:home": "Home",
+  "nav:projects": "Projects",
+  "nav:team": "Team",
+  "nav:contact": "Contact",
+  "nav:theme-light": "Light Theme",
+  "nav:theme-dark": "Dark Theme"
+}

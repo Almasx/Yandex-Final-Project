@@ -1,10 +1,14 @@
+import clsx from "clsx";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+import Button from "../atoms/Button";
 import HLogo from "../icons/header-logo";
 
 const Navigation = () => {
   const [theme, setTheme] = useState<boolean>(false); // default light
   const colorTheme = theme ? "dark" : "light";
+  const { locale, pathname, push, asPath } = useRouter();
 
   const onClick = () => {
     setTheme((previos) => !previos);
@@ -26,35 +30,62 @@ const Navigation = () => {
     >
       <div className="flex w-[1200px] flex-row items-center justify-between">
         <div className="w-40">
-          <HLogo/>
+          <HLogo />
         </div>
         <div className="flex flex-row gap-5 font-light capitalize text-black/30 dark:text-white/30 ">
           <Link
             href="/"
-            className="duration-200 hover:text-black dark:hover:text-white"
+            className={clsx(
+              "duration-200 hover:text-black dark:hover:text-white",
+              pathname.endsWith("/") && "text-black dark:text-white"
+            )}
           >
             Home
           </Link>
           <Link
             href="/projects"
-            className="duration-200 hover:text-black dark:hover:text-white"
+            className={clsx(
+              "duration-200 hover:text-black dark:hover:text-white",
+              pathname.endsWith("/projects") && "text-black dark:text-white"
+            )}
           >
             Projects
           </Link>
           <Link
             href="/team"
-            className="duration-200 hover:text-black dark:hover:text-white"
+            className={clsx(
+              "duration-200 hover:text-black dark:hover:text-white",
+              pathname.endsWith("/team") && "text-black dark:text-white"
+            )}
           >
             Team
           </Link>
         </div>
-        <div className="flex w-40 flex-row items-center gap-3 ">
+        <div className="flex flex-row items-center gap-3 ">
+          <Link
+            className={clsx(locale === "en" && "underline")}
+            href={asPath}
+            locale="en"
+          >
+            en
+          </Link>
+
+          <Link
+            className={clsx(locale === "ru" && "underline")}
+            href={asPath}
+            locale="ru"
+          >
+            ru
+          </Link>
           <button onClick={onClick} className="flex flex-row truncate">
             <span className="mr-1">⬤</span> {theme ? "Dark" : "Light"} Theme
           </button>
-          <Link href="/contact">
-            <button className="font-medium">Contact</button>
-          </Link>
+          <Button
+            onClick={() => push("/contact")}
+            className="rounded-lg px-2 py-1  font-medium"
+          >
+            Contact
+          </Button>
         </div>
       </div>
     </nav>

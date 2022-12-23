@@ -1,0 +1,11 @@
+{
+  "bg": "WORK WITH US",
+  "headline": "Always good to see you. Drop us a note about a application, or landing project.",
+  "form": {
+    "name": "Your Name",
+    "email": "Your Email",
+    "message": "Tell Us About The Project (Scope, Timeline, Budget)",
+    "permission": "I give permission for analyzing data",
+    "submit": "Submit"
+  }
+}
