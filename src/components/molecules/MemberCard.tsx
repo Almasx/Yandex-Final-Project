@@ -1,5 +1,3 @@
-import type { Author, Tech } from "@prisma/client";
-import Image from "next/image";
 import React from "react";
 import Github from "../icons/github";
 import Telegram from "../icons/telegram";
@@ -39,7 +37,7 @@ const MemberCard = ({
           <span className="text-black/60 dark:text-white/60">{location}</span>
         </div>
         <p className="text-black dark:text-white">
-          {...["React", "Typesrcipt"].map((tech) => tech + ", ")}
+          {...["React", "Typescript"].map((tech) => tech + ", ")}
         </p>
       </div>
     </div>
