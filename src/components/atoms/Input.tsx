@@ -65,7 +65,7 @@ const Input = ({
           placeholder={placeholder}
           className={clsx(
             "ease peer w-full rounded-[20px] border border-gray-100 bg-light-bg p-6 text-xl dark:bg-dark-bg",
-            "text-black duration-300 placeholder:text-black/30 focus:outline-none dark:border-black  dark:text-white dark:placeholder:text-white/30 dark:focus:border-white ",
+            "text-black duration-300 placeholder:text-black/30 focus:outline-none  dark:text-white dark:placeholder:text-white/30 dark:focus:border-white ",
             startIcon !== null && "pl-12"
           )}
         />

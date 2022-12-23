@@ -30,7 +30,7 @@ const MemberSection = ({ members = [] }: { members?: Author[] }) => {
             eu
           </p>
         </div>
-        <div className="grid grid-cols-4  gap-6">
+        <div className="grid grid-cols-4 gap-6">
           {members &&
             members.map((member) => <MemberCard key={member.id} {...member} />)}
           <Mode type="memberCard"></Mode>
