@@ -1,10 +1,7 @@
 "use client";
-import clsx from "clsx";
-import { Children, ReactNode } from "react";
 import React from "react";
 import Github from "../icons/github";
 import Telegram from "../icons/telegram";
-import ProjectCard from "../molecules/ProjectCard";
 
 export interface IButtonProps {
   condition?: "loading" | "loaded";

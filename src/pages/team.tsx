@@ -92,9 +92,7 @@ const Team = () => {
           AROUND THE WORLD
         </p>
       </section>
-      <footer className="col-span-full -mx-8">
-        <FLogo />
-      </footer>
+      <FLogo />
     </>
   );
 };
