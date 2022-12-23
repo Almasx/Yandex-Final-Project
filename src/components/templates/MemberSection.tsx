@@ -15,21 +15,21 @@ const MemberSection = ({
   headline: string;
 }) => {
   return (
-    <div className="relative col-span-full bg-gradient-to-r from-white via-black/30 to-white pt-[1px] dark:from-black dark:via-white/30 dark:to-black">
-      <section className="flex  flex-col gap-16 bg-light-bg py-16 dark:bg-dark-bg">
+    <div className="from-white via-black/30 to-white dark:from-black dark:via-white/30 dark:to-black relative col-span-full bg-gradient-to-r pt-[1px]">
+      <section className="flex  flex-col gap-16 bg-primary-light py-16 dark:bg-primary-dark">
         {loading && (
           <div className="flex flex-row justify-between">
-            <div className="h-24 w-[20%] animate-pulse rounded-xl bg-light-gray-200 dark:bg-gray-200"></div>
-            <div className="h-24 w-[20%] animate-pulse rounded-xl bg-light-gray-200 dark:bg-gray-200"></div>
-            <div className="h-24 w-[20%] animate-pulse rounded-xl bg-light-gray-200 dark:bg-gray-200"></div>
-            <div className="h-24 w-[20%] animate-pulse rounded-xl bg-light-gray-200 dark:bg-gray-200"></div>
+            <div className="h-24 w-[20%] animate-pulse rounded-xl bg-gray-light-secondary dark:bg-gray-dark-secondary"></div>
+            <div className="h-24 w-[20%] animate-pulse rounded-xl bg-gray-light-secondary dark:bg-gray-dark-secondary"></div>
+            <div className="h-24 w-[20%] animate-pulse rounded-xl bg-gray-light-secondary dark:bg-gray-dark-secondary"></div>
+            <div className="h-24 w-[20%] animate-pulse rounded-xl bg-gray-light-secondary dark:bg-gray-dark-secondary"></div>
           </div>
         )}
         {!loading && members && (
           <div className="flex flex-row justify-between">
             {members.map((member) => (
               <div
-                className="span text-8xl font-bold text-light-gray-200 dark:text-gray-200"
+                className="span text-8xl font-bold text-gray-light-secondary dark:text-gray-dark-secondary"
                 key={member.id}
               >
                 {member.name}
@@ -49,10 +49,7 @@ const MemberSection = ({
         </div>
         {loading && (
           <div className="grid grid-cols-4 gap-6">
-            <Mode type="memberCard"></Mode>
-            <Mode type="memberCard"></Mode>
-            <Mode type="memberCard"></Mode>
-            <Mode type="memberCard"></Mode>
+            {Array(4).fill(<Mode type="memberCard"></Mode>)}
           </div>
         )}
         {!loading && (

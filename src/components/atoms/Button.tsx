@@ -52,11 +52,11 @@ const Button = ({
         className,
         [
           variant === "primary" && [
-            "bg-black dark:bg-white hover:bg-gray-100 dark:hover:bg-light-gray-200", // background
-            " text-white  dark:text-dark-bg ", // typography
-          ],
+            "bg-primary-dark dark:bg-primary-light ", // background
+            " text-primary-light  dark:text-primary-dark ", // typography
+          ], //hover:bg-gray-100/10 dark:hover:bg-light-gray-200/10
           variant === "secondary" && [
-            "border-stroke-200 border hover:bg-gray-100/10 dark:hover:bg-light-gray-200/10", // box model
+            "border- border", // box model
             "bg-transparent hover:bg-surface/5", // background
           ],
           variant === "text" && [
@@ -70,7 +70,7 @@ const Button = ({
       {isRippling && (
         <span
           className={clsx(
-            "animate-ripple-effect absolute block h-5 w-5 rounded-full bg-white/20 opacity-100",
+            "animate-ripple-effect absolute block h-5 w-5 rounded-full bg-primary-light/20 opacity-100",
             !ripple && "hidden"
           )}
           style={{ left: coords.x, top: coords.y }}

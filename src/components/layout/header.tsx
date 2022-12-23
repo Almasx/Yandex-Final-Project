@@ -24,8 +24,8 @@ const Navigation = () => {
 
   return (
     <nav
-      className="fixed z-20 flex h-16 w-full items-center justify-center border-b border-b-light-gray-200 bg-white/60 text-sm
-    uppercase text-black backdrop-blur-2xl dark:border-b-gray-200 dark:bg-black/60 dark:text-white "
+      className="fixed z-20 flex h-16 w-full items-center justify-center border-b border-b-gray-light-secondary bg-primary-light/60 text-sm
+    uppercase text-primary-dark backdrop-blur-2xl dark:border-b-gray-dark-secondary dark:bg-primary-dark/60 dark:text-primary-light "
     >
       <div className="flex w-[1200px] flex-row items-center justify-between">
         <div className="w-40">
@@ -35,12 +35,13 @@ const Navigation = () => {
             <img className="dark:invert" src="/icons/header-logo.svg" alt="header logo icon" />
           </Link>
         </div>
-        <div className="flex flex-row gap-5 font-light capitalize text-black/30 dark:text-white/30 ">
+        <div className="flex flex-row gap-5 font-light capitalize text-primary-dark/30 dark:text-primary-light/30 ">
           <Link
             href="/"
             className={clsx(
-              "duration-200 hover:text-black dark:hover:text-white",
-              pathname.endsWith("/") && "text-black dark:text-white"
+              "duration-200 hover:text-primary-dark dark:hover:text-primary-light",
+              pathname.endsWith("/") &&
+                "text-primary-dark dark:text-primary-light"
             )}
           >
             Home
@@ -48,8 +49,9 @@ const Navigation = () => {
           <Link
             href="/projects"
             className={clsx(
-              "duration-200 hover:text-black dark:hover:text-white",
-              pathname.endsWith("/projects") && "text-black dark:text-white"
+              "duration-200 hover:text-primary-dark dark:hover:text-primary-light",
+              pathname.endsWith("/projects") &&
+                "text-primary-dark dark:text-primary-light"
             )}
           >
             Projects
@@ -57,8 +59,9 @@ const Navigation = () => {
           <Link
             href="/team"
             className={clsx(
-              "duration-200 hover:text-black dark:hover:text-white",
-              pathname.endsWith("/team") && "text-black dark:text-white"
+              "duration-200 hover:text-primary-dark dark:hover:text-primary-light",
+              pathname.endsWith("/team") &&
+                "text-primary-dark dark:text-primary-light"
             )}
           >
             Team

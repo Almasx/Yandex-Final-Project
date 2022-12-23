@@ -66,7 +66,7 @@ const Contact = () => {
       </section>
       <div className="col-span-12 bg-gradient-to-r from-white via-black/30  to-white pt-[1px] dark:from-black dark:via-white/30 dark:to-black">
         <form
-          className="grid grid-cols-2 gap-8 bg-light-bg py-16 dark:bg-dark-bg"
+          className="dark:bg-primary-dark bg-primary-light grid grid-cols-2 gap-8 py-16"
           onSubmit={onSubmit}
         >
           <Input
