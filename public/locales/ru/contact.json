@@ -1,11 +1,11 @@
 {
-  "bg": "WORK WITH US",
-  "headline": "Always good to see you. Drop us a note about a application, or landing project.",
+  "bg": "Работать с нами",
+  "headline": "Всегда рады вас видеть. Напишите нам письмо о приложении или проекте.",
   "form": {
-    "name": "Your Name",
-    "email": "Your Email",
-    "message": "Tell Us About The Project (Scope, Timeline, Budget)",
-    "permission": "I give permission for analyzing data",
-    "submit": "Submit"
+    "name": "Имя",
+    "email": "Почта",
+    "message": "Раскажите нам о своем проекте (Объем, сроки, бюджет)",
+    "permission": "Я даю разрешение на анализ данных",
+    "submit": "Отправить"
   }
 }

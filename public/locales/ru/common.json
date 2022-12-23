@@ -1,8 +1,8 @@
 {
-  "nav:home": "Home",
-  "nav:projects": "Projects",
+  "nav:home": "Главная",
+  "nav:projects": "Проекты",
   "nav:team": "Team",
-  "nav:contact": "Contact",
-  "nav:theme-light": "Light Theme",
-  "nav:theme-dark": "Dark Theme"
+  "nav:contact": "Контакты",
+  "nav:theme-light": "Светлая тема",
+  "nav:theme-dark": "Темная тема"
 }

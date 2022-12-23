@@ -43,7 +43,7 @@ const projects = () => {
   return (
     <>
       <div className="col-span-6 col-start-4 mt-20 flex flex-col items-center">
-        <h1 className="text-6xl font-bold text-black dark:text-white">
+        <h1 className="text-6xl font-bold text-black dark:text-white text-center">
           {t`headline`}
         </h1>
         <p className="mt-1 max-w-[512px] text-center text-xl font-normal text-black opacity-60 dark:text-white">

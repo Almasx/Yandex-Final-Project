@@ -1,13 +1,13 @@
 {
   "hero": {
-    "headline": "Meet our team of designers and software engineers",
-    "subheading": "Expertly crafted websites and innovative technology solutions"
+    "headline": "Познакомьтесь с нашей командой дизайнеров и веб-программистов",
+    "subheading": "Созданные экспертами веб-сайты и инновационные технологические решения"
   },
   "member": {
-    "headline": "We are team of 2 engineers and 2 designers",
-    "text": "Our team of engineers and designers are highly skilled and experienced in their respective fields. Together, we have the expertise and creativity to bring your vision to life with top-quality websites and innovative technology solutions."
+    "headline": "Мы команда из 2 разработчиков и 2 дизайнеров",
+    "text": "Наша команда инженеров и дизайнеров обладает высокой квалификацией и опытом в своих областях. Вместе у нас есть опыт и творческий подход, чтобы воплотить ваше идеи в жизнь с помощью высококачественных технологий и инновационных технологических решений."
   },
   "map": {
-    "headline": "Locations"
+    "headline": "Локации"
   }
 }
