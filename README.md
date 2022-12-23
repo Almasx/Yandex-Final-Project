@@ -33,9 +33,13 @@ npm i --force
 ```
 3
 ```
-npm run build
+npm run db:client
 ```
 4
+```
+npm run build
+```
+5
 ```
 npm start
 ```
