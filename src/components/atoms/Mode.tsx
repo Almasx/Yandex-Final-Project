@@ -9,11 +9,9 @@ import ProjectCard from "../molecules/ProjectCard";
 export interface IButtonProps {
   condition?: "loading" | "loaded";
   type?: "projectCard" | "memberCard";
-  children: ReactNode;
 }
 
 const Mode = ({
-  children,
   type = "projectCard",
   condition = "loading",
 }: IButtonProps) => {
@@ -58,8 +56,6 @@ const Mode = ({
           </div>
         </div>
       );
-    }else{
-      return children
     }
   } else if (type === 'memberCard'){
     if (condition === "loading") {
@@ -89,8 +85,6 @@ const Mode = ({
           </div>
         </div>
       );
-    }else{
-      return children
     }
   }
   return null
