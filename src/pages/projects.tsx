@@ -85,10 +85,6 @@ const projects = () => {
                 />
               );
             })}
-          <Mode />
-          <Mode />
-          <Mode />
-          <Mode />
         </InfiniteScroll>
       </div>
     </>

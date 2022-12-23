@@ -7,7 +7,7 @@ This is a website of the web development team
 - information about us
 - contact us form
 - dark and light theme
-- our projects slider
+- our projects
 - map with our addresses
 
 ## Technology stack
@@ -25,7 +25,7 @@ To start the project:
 
 1
 ```
-git clone https://github.com/Almasx/Yandex-Final-Project/
+git clone https://github.com/Almasx/Yandex-Final-Project.git
 ```
 2
 ```
@@ -33,9 +33,13 @@ npm i --force
 ```
 3
 ```
-npm run build
+npm run db:client
 ```
 4
+```
+npm run build
+```
+5
 ```
 npm start
 ```

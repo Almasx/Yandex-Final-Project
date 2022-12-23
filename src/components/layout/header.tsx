@@ -3,7 +3,6 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import Button from "../atoms/Button";
-import HLogo from "../icons/header-logo";
 
 const Navigation = () => {
   const [theme, setTheme] = useState<boolean>(false); // default light
@@ -30,7 +29,11 @@ const Navigation = () => {
     >
       <div className="flex w-[1200px] flex-row items-center justify-between">
         <div className="w-40">
-          <HLogo />
+          <Link
+            href="/"
+          >
+            <img className="dark:invert" src="/icons/header-logo.svg" alt="header logo icon" />
+          </Link>
         </div>
         <div className="flex flex-row gap-5 font-light capitalize text-primary-dark/30 dark:text-primary-light/30 ">
           <Link
@@ -85,7 +88,7 @@ const Navigation = () => {
           </button>
           <Button
             onClick={() => push("/contact")}
-            className="rounded-lg px-2 py-1  font-medium"
+            className="rounded-lg px-2 py-1 font-medium"
           >
             Contact
           </Button>

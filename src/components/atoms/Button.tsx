@@ -54,7 +54,7 @@ const Button = ({
           variant === "primary" && [
             "bg-primary-dark dark:bg-primary-light ", // background
             " text-primary-light  dark:text-primary-dark ", // typography
-          ],
+          ], //hover:bg-gray-100/10 dark:hover:bg-light-gray-200/10
           variant === "secondary" && [
             "border- border", // box model
             "bg-transparent hover:bg-surface/5", // background

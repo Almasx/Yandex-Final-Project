@@ -1,6 +1,4 @@
 import React from "react";
-import Github from "../icons/github";
-import Telegram from "../icons/telegram";
 
 interface IMemberCardProps {
   name: string;
@@ -20,14 +18,14 @@ const MemberCard = ({
   return (
     <div className="flex grow flex-col rounded-xl border border-gray-light p-2 dark:border-gray-dark">
       <div className="relative flex h-60 grow items-center overflow-hidden rounded-xl">
-        <img className="w-full rounded-xl" src={link_pfp} alt={""} />
+        <img className="w-full rounded-xl" src={link_pfp} alt="author photo" />
 
         <div className="absolute right-2 top-2 flex items-center justify-center gap-2 rounded-2xl bg-primary-light/80 p-1 opacity-80 dark:bg-primary-dark">
           <a href={link_github}>
-            <Github />
+            <img className="dark:invert" src="/icons/github.svg" alt="github icon" />
           </a>
           <a href={link_telegram}>
-            <Telegram />
+            <img className="dark:invert" src="/icons/telegram.svg" alt="telegram icon" />
           </a>
         </div>
       </div>

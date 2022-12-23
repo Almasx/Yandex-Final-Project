@@ -1,14 +1,11 @@
 import { trpc } from "../utils/trpc";
-import FLogo from "../components/icons/footer-logo";
 
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import nextI18nConfig from "../../next-i18next.config.mjs";
 import { useTranslation } from "next-i18next";
-import Star from "../components/icons/star";
 
-import { YMaps, Map, GeoObject } from "react-yandex-maps";
+import { YMaps, Map, GeoObject, ZoomControl } from "react-yandex-maps";
 import Location from "../components/molecules/Location";
-import Circle from "../components/icons/circle";
 import MemberSection from "../components/templates/MemberSection";
 
 export const getStaticProps = async ({ locale }: { locale: string }) => ({
@@ -25,22 +22,22 @@ const Team = () => {
   const { data } = trpc.author.getAll.useQuery();
   return (
     <>
-      <section className="relative col-span-full h-screen ">
+      <section className="relative col-span-full h-screen">
         <div className="absolute h-full w-full scale-110">
-          <div className="absolute inset-0 m-auto aspect-square h-5/6 object-cover">
-            <Circle size="md" />
+          <div className="absolute inset-0 m-auto aspect-square h-5/6 object-cover dark:invert">
+            <img src="/icons/circle.svg" className="opacity-70 circle-md absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%]" alt="white circle" />
             <div className="sun">
               <div className="dot">
-                <Star />
+                <img src="/icons/star.svg" className="w-full" alt="star" />
               </div>
             </div>
-            <Circle size="sm" />
+            <img src="/icons/circle.svg" className="opacity-70 circle-sm absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%]" alt="white circle" />
             <div className="sun-min sun">
               <div className="dot">
-                <Star />
+                <img src="/icons/star.svg" className="w-full" alt="star" />
               </div>
             </div>
-            <Circle size="lg" />
+            <img src="/icons/circle.svg" className="opacity-70 circle-lg absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%]" alt="white circle" />
           </div>
         </div>
         <div className="flex h-full w-full flex-col items-center justify-center">
@@ -64,6 +61,7 @@ const Team = () => {
               defaultState={{ center: [55.76, 37.64], zoom: 7, controls: [] }}
               className="w-100% z-10 flex h-[700px] w-full flex-col items-center"
             >
+              <ZoomControl />
               <GeoObject
                 geometry={{
                   type: "Point",
@@ -74,7 +72,6 @@ const Team = () => {
                 geometry={{
                   type: "Point",
                   coordinates: [56.9, 33.1],
-                  iconCaption: "Интересное место",
                 }}
               />
               <Location.Wrapper>
@@ -92,7 +89,9 @@ const Team = () => {
           AROUND THE WORLD
         </p>
       </section>
-      <FLogo />
+      <div className="dark:invert col-span-full">
+        <img src="/icons/footer-logo.svg" alt="footer logo" />
+      </div>
     </>
   );
 };
