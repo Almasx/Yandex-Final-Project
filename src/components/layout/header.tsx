@@ -29,7 +29,11 @@ const Navigation = () => {
     >
       <div className="flex w-[1200px] flex-row items-center justify-between">
         <div className="w-40">
-          <img className="dark:invert" src="/icons/header-logo.svg" alt="" />
+          <Link
+            href="/"
+          >
+            <img className="dark:invert" src="/icons/header-logo.svg" alt="" />
+          </Link>
         </div>
         <div className="flex flex-row gap-5 font-light capitalize text-black/30 dark:text-white/30 ">
           <Link
