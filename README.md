@@ -7,7 +7,7 @@ This is a website of the web development team
 - information about us
 - contact us form
 - dark and light theme
-- our projects slider
+- our projects
 - map with our addresses
 
 ## Technology stack
