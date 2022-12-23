@@ -114,9 +114,9 @@ const Contact = () => {
               }))
             }
           >
-            I give permission for{" "}
+            {(t`form.permission`).split('/')[0]}
             <Link href="policy" className="underline">
-              analyzing data
+              {(t`form.permission`).split('/')[1]}
             </Link>
           </CheckBox>
           <div className="col-span-full">
