@@ -38,10 +38,10 @@ const MemberSection = ({
           </div>
         )}
         <div className="flex w-[500px] flex-col gap-6">
-          <h3 className="text-4xl font-bold text-black/60 dark:text-white/60">
+          <h3 className="text-4xl font-bold text-primary-dark/60 dark:text-primary-light/60">
             {headline.split('b')[0]}
-            <span className="text-black dark:text-white">{headline.split('b')[1]}</span> {headline.split('b')[2]}
-            <span className="text-black dark:text-white">{headline.split('b')[3]}</span>
+            <span className="text-primary-dark dark:text-primary-light">{headline.split('b')[1]}</span> {headline.split('b')[2]}
+            <span className="text-primary-dark dark:text-primary-light">{headline.split('b')[3]}</span>
           </h3>
           <p className="text-xl text-black dark:text-white">
             {text}

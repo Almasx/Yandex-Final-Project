@@ -52,11 +52,11 @@ const Button = ({
         className,
         [
           variant === "primary" && [
-            "bg-primary-dark dark:bg-primary-light ", // background
-            " text-primary-light  dark:text-primary-dark ", // typography
+            "bg-primary-dark dark:bg-primary-light", // background
+            "text-primary-light  dark:text-primary-dark", // typography
           ], //hover:bg-gray-100/10 dark:hover:bg-light-gray-200/10
           variant === "secondary" && [
-            "border- border", // box model
+            "dark:border-gray-dark border-gray-light border text-primary-dark  dark:text-primary-light", // box model
             "bg-transparent hover:bg-surface/5", // background
           ],
           variant === "text" && [
@@ -76,7 +76,7 @@ const Button = ({
           style={{ left: coords.x, top: coords.y }}
         />
       )}
-      <span className="relative z-10 ">{children}</span>
+      {children}
     </button>
   );
 };
