@@ -4,7 +4,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import nextI18nConfig from "../../next-i18next.config.mjs";
 import { useTranslation } from "next-i18next";
 
-import { YMaps, Map, GeoObject } from "react-yandex-maps";
+import { YMaps, Map, GeoObject, ZoomControl } from "react-yandex-maps";
 import Location from "../components/molecules/Location";
 import MemberSection from "../components/templates/MemberSection";
 
@@ -61,6 +61,7 @@ const Team = () => {
               defaultState={{ center: [55.76, 37.64], zoom: 7, controls: [] }}
               className="w-100% z-10 flex h-[700px] w-full flex-col items-center"
             >
+              <ZoomControl />
               <GeoObject
                 geometry={{
                   type: "Point",
@@ -71,7 +72,6 @@ const Team = () => {
                 geometry={{
                   type: "Point",
                   coordinates: [56.9, 33.1],
-                  iconCaption: 'Интересное место'
                 }}
               />
               <Location.Wrapper>
