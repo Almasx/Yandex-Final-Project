@@ -43,7 +43,7 @@ const MemberSection = ({
             <span className="text-primary-dark dark:text-primary-light">{headline.split('b')[1]}</span> {headline.split('b')[2]}
             <span className="text-primary-dark dark:text-primary-light">{headline.split('b')[3]}</span>
           </h3>
-          <p className="text-xl text-black dark:text-white">
+          <p className="text-xl text-primary-dark dark:text-primary-light">
             {text}
           </p>
         </div>
