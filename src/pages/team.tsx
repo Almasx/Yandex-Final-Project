@@ -74,6 +74,7 @@ const Team = () => {
                 geometry={{
                   type: "Point",
                   coordinates: [56.9, 33.1],
+                  iconCaption: 'Интересное место'
                 }}
               />
               <Location.Wrapper>
