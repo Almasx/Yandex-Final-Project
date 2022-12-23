@@ -19,4 +19,10 @@ export default defineNextConfig({
   swcMinify: true,
   // Next.js i18n docs: https://nextjs.org/docs/advanced-features/i18n-routing
   i18n: config.i18n,
+  webpack5: true,
+  webpack: (config) => {
+    config.resolve.fallback = { fs: false };
+
+    return config;
+  },
 });

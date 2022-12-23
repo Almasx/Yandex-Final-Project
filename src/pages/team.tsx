@@ -50,8 +50,8 @@ const Team = () => {
         </div>
       </section>
 
-      {!data && <MemberSection loading={true} />}
-      {data && <MemberSection members={data} loading={false} />}
+      {!data && <MemberSection loading={true} text={t`member.text`} headline={t`member.headline`} />}
+      {data && <MemberSection members={data} loading={false} text={t`member.text`} headline={t`member.headline`}/>}
 
       <section className="col-span-full mb-4 h-full overflow-clip">
         <div className="relative flex flex-col">
