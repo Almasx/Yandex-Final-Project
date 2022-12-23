@@ -1,17 +1,19 @@
 "use client";
 import clsx from "clsx";
-import type { ReactNode } from "react";
+import { Children, ReactNode } from "react";
 import React from "react";
 import Github from "../icons/github";
+import Telegram from "../icons/telegram";
 import ProjectCard from "../molecules/ProjectCard";
-import Badge from "./Badge";
 
 export interface IButtonProps {
   condition?: "loading" | "loaded";
-  type?: "projectCard";
+  type?: "projectCard" | "memberCard";
+  children: ReactNode;
 }
 
 const Mode = ({
+  children,
   type = "projectCard",
   condition = "loading",
 }: IButtonProps) => {
@@ -56,6 +58,39 @@ const Mode = ({
           </div>
         </div>
       );
+    }else{
+      return children
+    }
+  } else if (type === 'memberCard'){
+    if (condition === "loading") {
+      return (
+        <div className="flex grow flex-col rounded-xl border border-gray-100 p-2">
+          <div className="relative h-60 grow rounded-xl overflow-hidden flex items-center">
+            <div className="w-full h-full rounded-xl bg-black/60 dark:bg-white/30 animate-pulse" />
+            <div className="absolute right-2 top-2 flex items-center justify-center gap-2 rounded-2xl bg-light-bg/80 p-1 opacity-80 dark:bg-dark-bg">
+              <a href="#">
+                <Github />
+              </a>
+              <a href="#">
+                <Telegram />
+              </a>
+            </div>
+          </div>
+          <div className="flex flex-col gap-2 p-3 text-base">
+            <div className="flex flex-row justify-between">
+              <span className="animate-pulse rounded-full h-4 w-16 bg-gray-100 dark:bg-light-gray-100"></span>
+              <span className="animate-pulse rounded-full h-4 w-24 bg-gray-100 dark:bg-light-gray-100"></span>
+            </div>
+            <div className="h-4 w-full flex ">
+              <span className="animate-pulse rounded-full h-4 w-16 bg-gray-100 dark:bg-light-gray-100 mr-4"></span>
+              <span className="animate-pulse rounded-full h-4 w-24 bg-gray-100 dark:bg-light-gray-100 mr-4"></span>
+              <span className="animate-pulse rounded-full h-4 w-8 bg-gray-100 dark:bg-light-gray-100"></span>
+            </div>
+          </div>
+        </div>
+      );
+    }else{
+      return children
     }
   }
   return null

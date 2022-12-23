@@ -1,5 +1,6 @@
 import type { Author } from "@prisma/client";
 import React from "react";
+import Mode from "../atoms/Mode";
 import MemberCard from "../molecules/MemberCard";
 
 const MemberSection = ({ members = [] }: { members?: Author[] }) => {
@@ -31,7 +32,7 @@ const MemberSection = ({ members = [] }: { members?: Author[] }) => {
         </div>
         <div className="grid grid-cols-4  gap-6">
           {members &&
-            members.map((member) => <MemberCard key={member.id} {...member} />)}
+            members.map((member) => <Mode type="memberCard" condition="loaded"><MemberCard key={member.id} {...member} /></Mode>)}
         </div>
       </section>
     </div>
