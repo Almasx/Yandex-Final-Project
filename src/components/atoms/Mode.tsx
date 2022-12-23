@@ -35,11 +35,7 @@ const Mode = ({
             href="#"
             className="absolute right-6 top-6 flex h-8 w-8 items-center justify-center rounded-2xl bg-primary-light p-1 opacity-80 dark:bg-primary-dark"
           >
-<<<<<<< HEAD
-            <Github />
-=======
             <img className="dark:invert" src="/icons/github.svg" alt="github icon" />
->>>>>>> c978f4ec95a9aced29292fd27660ffb510f44f39
           </a>
           <div className="mt-4 flex flex-col gap-3 py-1">
             <div className="items`-center flex justify-between">
