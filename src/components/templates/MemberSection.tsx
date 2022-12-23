@@ -32,7 +32,11 @@ const MemberSection = ({ members = [] }: { members?: Author[] }) => {
         </div>
         <div className="grid grid-cols-4  gap-6">
           {members &&
-            members.map((member) => <Mode type="memberCard" condition="loaded"><MemberCard key={member.id} {...member} /></Mode>)}
+            members.map((member) => <MemberCard key={member.id} {...member} />)}
+          <Mode type="memberCard"></Mode>
+          <Mode type="memberCard"></Mode>
+          <Mode type="memberCard"></Mode>
+          <Mode type="memberCard"></Mode>
         </div>
       </section>
     </div>
