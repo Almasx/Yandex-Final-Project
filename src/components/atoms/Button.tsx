@@ -52,7 +52,7 @@ const Button = ({
         className,
         [
           variant === "primary" && [
-            "bg-black dark:bg-white ", // background
+            "bg-black dark:bg-white hover:bg-gray-100 dark:hover:bg-light-gray-200", // background
             " text-white  dark:text-dark-bg ", // typography
           ],
           variant === "secondary" && [

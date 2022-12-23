@@ -81,7 +81,7 @@ const Navigation = () => {
           </button>
           <Button
             onClick={() => push("/contact")}
-            className="rounded-lg px-2 py-1  font-medium"
+            className="rounded-lg px-2 py-1 font-medium"
           >
             Contact
           </Button>
