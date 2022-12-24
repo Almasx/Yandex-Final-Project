@@ -6,9 +6,13 @@ import MemberCard from "../molecules/MemberCard";
 const MemberSection = ({
   members = [],
   loading,
+  text,
+  headline,
 }: {
   members?: Author[];
   loading: boolean;
+  text: string;
+  headline: string;
 }) => {
   return (
     <div className="from-white via-black/30 to-white dark:from-black dark:via-white/30 dark:to-black relative col-span-full bg-gradient-to-r pt-[1px]">
@@ -35,20 +39,17 @@ const MemberSection = ({
         )}
         <div className="flex w-[500px] flex-col gap-6">
           <h3 className="text-4xl font-bold text-primary-dark/60 dark:text-primary-light/60">
-            We are team of{" "}
+            {headline.split("b")[0]}
             <span className="text-primary-dark dark:text-primary-light">
-              2 engineers
+              {headline.split("b")[1]}
             </span>{" "}
-            and
+            {headline.split("b")[2]}
             <span className="text-primary-dark dark:text-primary-light">
-              {" "}
-              2 designers
+              {headline.split("b")[3]}
             </span>
           </h3>
-          <p className="text-xl">
-            Fermentum tellus nec volutpat non enim consequat adcsddipiscing
-            euismod. Mi et tortor dolor nec eu rtor dolor nec eur tor dolor nec
-            eu
+          <p className="text-xl text-primary-dark dark:text-primary-light">
+            {text}
           </p>
         </div>
         {loading && (

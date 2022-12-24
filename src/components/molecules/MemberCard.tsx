@@ -39,7 +39,7 @@ const MemberCard = ({
       </div>
       <div className="flex flex-col gap-2 p-3 text-base">
         <div className="flex flex-row justify-between">
-          {name}
+          <span className="text-primary-dark dark:text-primary-light">{name}</span>
           <span className="text-primary-dark/60 dark:text-primary-light/60">
             {location}
           </span>

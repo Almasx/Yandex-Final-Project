@@ -55,7 +55,7 @@ const Contact = () => {
         >
           {Array(4).fill(
             <>
-              <header className="box-content whitespace-nowrap text-[160px] ">
+              <header className="text-primary-dark box-content whitespace-nowrap text-[160px] dark:text-primary-light">
                 {t`bg`.toUpperCase()}
               </header>
               <img
@@ -66,7 +66,7 @@ const Contact = () => {
             </>
           )}
         </div>
-        <h3 className=" text-5xl">{t`headline`}</h3>
+        <h3 className="text-primary-dark dark:text-primary-light text-5xl">{t`headline`}</h3>
       </section>
       <div className="from-white via-black/30 to-white dark:from-black  dark:via-white/30 dark:to-black col-span-12 bg-gradient-to-r pt-[1px]">
         <form
@@ -118,9 +118,9 @@ const Contact = () => {
               }))
             }
           >
-            I give permission for{" "}
+            {(t`form.permission`).split('/')[0]}
             <Link href="policy" className="underline">
-              analyzing data
+              {(t`form.permission`).split('/')[1]}
             </Link>
           </CheckBox>
           <div className="col-span-full">

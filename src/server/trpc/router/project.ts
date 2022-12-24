@@ -15,12 +15,12 @@ export const projectRouter = router({
       const projects = await ctx.prisma.project.findMany({
         include: { tech: true, author: true },
         cursor: cursor ? { id: cursor } : undefined,
-        take: limit + 1,
+        take: limit,
       });
 
       return {
         projects,
-        nextId: projects.length === limit ? projects[limit - 1]?.id : undefined,
+        nextId: projects.length === limit ? projects[1]?.id : undefined,
       };
     }),
 });

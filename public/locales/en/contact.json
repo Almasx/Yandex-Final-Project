@@ -5,7 +5,7 @@
     "name": "Your Name",
     "email": "Your Email",
     "message": "Tell Us About The Project (Scope, Timeline, Budget)",
-    "permission": "I give permission for analyzing data",
+    "permission": "I give permission for / analyzing data",
     "submit": "Submit"
   }
 }
