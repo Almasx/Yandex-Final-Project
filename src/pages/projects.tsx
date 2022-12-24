@@ -25,7 +25,10 @@ const projects = () => {
   const { data, fetchNextPage, hasNextPage } =
     trpc.projects.getProjects.useInfiniteQuery(
       { limit: 2 },
-      { getNextPageParam: (lastProject) => lastProject.nextId !== undefined ? lastProject.nextId + 1 : undefined}
+      {
+        getNextPageParam: (lastProject) =>
+          lastProject.nextId !== undefined ? lastProject.nextId + 1 : undefined,
+      }
     );
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const projects = useMemo(
@@ -41,14 +44,14 @@ const projects = () => {
 
   return (
     <>
-      <div className="col-span-6 col-start-4 mt-20 flex flex-col items-center">
-        <h1 className="dark:text-primary-light text-primary-dark text-center text-6xl font-bold">
+      <div className="col-span-full mt-20 flex flex-col items-center justify-center">
+        <h1 className="text-center text-4xl font-bold text-primary-dark dark:text-primary-light sm:text-6xl">
           {t`headline`}
         </h1>
-        <p className="dark:text-primary-light text-primary-dark mt-1 max-w-[512px] text-center text-xl font-normal opacity-60">
+        <p className="mt-1 max-w-[512px] text-center text-xl font-normal text-primary-dark opacity-60 dark:text-primary-light">
           {t`text`}
         </p>
-        <Button className="mt-4 rounded-lg  font-medium">{t`cta`}</Button>
+        <Button className="mt-6 rounded-lg font-medium">{t`cta`}</Button>
       </div>
       <div className="col-span-full">
         <InfiniteScroll
@@ -58,10 +61,21 @@ const projects = () => {
             fetchNextPage();
           }}
           hasMore={!!hasNextPage}
-          loader={<><Mode></Mode><Mode></Mode></>}
-          className="my-20 grid grid-cols-2 gap-12"
+          loader={
+            <>
+              <Mode></Mode>
+              <Mode></Mode>
+            </>
+          }
+          className="my-20 grid grid-cols-1 gap-5 md:grid-cols-2"
         >
-          {!data ? <><Mode></Mode><Mode></Mode></> : projects &&
+          {!data ? (
+            <>
+              <Mode></Mode>
+              <Mode></Mode>
+            </>
+          ) : (
+            projects &&
             projects.projects.map((project) => {
               const {
                 title,
@@ -83,7 +97,8 @@ const projects = () => {
                   tech_stack={tech}
                 />
               );
-            })}
+            })
+          )}
         </InfiniteScroll>
       </div>
     </>

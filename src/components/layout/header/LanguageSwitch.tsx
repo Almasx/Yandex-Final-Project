@@ -6,22 +6,22 @@ import React from "react";
 const LanguageSwitch = () => {
   const { locale, asPath } = useRouter();
   return (
-    <>
+    <div className="flex flex-row items-center justify-end gap-3">
       <Link
         className={clsx(locale === "en" && "underline")}
         href={asPath}
         locale="en"
       >
-        en
+        EN
       </Link>
       <Link
         className={clsx(locale === "ru" && "underline")}
         href={asPath}
         locale="ru"
       >
-        ru
+        RU
       </Link>
-    </>
+    </div>
   );
 };
 

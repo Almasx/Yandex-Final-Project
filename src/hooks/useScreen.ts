@@ -9,9 +9,9 @@ export default function useScreen() {
 
   const getDeviceType = useCallback(() => {
     const media = {
-      [SCREEN_PHONE]: 540,
+      [SCREEN_PHONE]: 640,
       [SCREEN_TABLET]: 768,
-      [SCREEN_DESKTOP]: 1100,
+      [SCREEN_DESKTOP]: 1024,
     };
 
     if (width <= media[SCREEN_PHONE]) {
@@ -40,6 +40,7 @@ export default function useScreen() {
     function handleResize() {
       setWidth(window.innerWidth);
     }
+    setWidth(window.innerWidth);
 
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);

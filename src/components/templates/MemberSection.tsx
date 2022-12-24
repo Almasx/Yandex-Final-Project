@@ -15,7 +15,7 @@ const MemberSection = ({
   headline: string;
 }) => {
   return (
-    <div className="from-white via-black/30 to-white dark:from-black dark:via-white/30 dark:to-black relative col-span-full bg-gradient-to-r pt-[1px]">
+    <div className="relative col-span-full  bg-gradient-to-r from-primary-light via-primary-dark/30 to-primary-light pt-[1px] dark:from-primary-dark dark:via-primary-light/30 dark:to-primary-dark">
       <section className="flex  flex-col gap-16 bg-primary-light py-16 dark:bg-primary-dark">
         {loading && (
           <div className="flex flex-row justify-between">
