@@ -24,7 +24,7 @@ const Team = () => {
     <>
       <section className="relative col-span-full h-screen">
         <div className="absolute h-full w-full scale-110">
-          <div className="absolute inset-0 m-auto aspect-square h-5/6 object-cover dark:invert">
+          <div className="absolute inset-0 m-auto aspect-square h-5/6 object-cover dark:invert hidden md:block">
             <img
               src="/icons/circle.svg"
               className="circle-md absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] opacity-70"
