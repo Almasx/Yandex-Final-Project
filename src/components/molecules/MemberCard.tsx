@@ -22,10 +22,18 @@ const MemberCard = ({
 
         <div className="absolute right-2 top-2 flex items-center justify-center gap-2 rounded-2xl bg-primary-light/80 p-1 opacity-80 dark:bg-primary-dark">
           <a href={link_github}>
-            <img className="dark:invert" src="/icons/github.svg" alt="github icon" />
+            <img
+              className="dark:invert"
+              src="/icons/github.svg"
+              alt="github icon"
+            />
           </a>
           <a href={link_telegram}>
-            <img className="dark:invert" src="/icons/telegram.svg" alt="telegram icon" />
+            <img
+              className="dark:invert"
+              src="/icons/telegram.svg"
+              alt="telegram icon"
+            />
           </a>
         </div>
       </div>
@@ -36,7 +44,7 @@ const MemberCard = ({
             {location}
           </span>
         </div>
-        <p className="text-primary-dark dark:text-primary-light">
+        <p className="">
           {...["React", "Typescript"].map((tech) => tech + ", ")}
         </p>
       </div>

@@ -35,11 +35,11 @@ const Mode = ({
             href="#"
             className="absolute right-6 top-6 flex h-8 w-8 items-center justify-center rounded-2xl bg-primary-light p-1 opacity-80 dark:bg-primary-dark"
           >
-<<<<<<< HEAD
-            <Github />
-=======
-            <img className="dark:invert" src="/icons/github.svg" alt="github icon" />
->>>>>>> c978f4ec95a9aced29292fd27660ffb510f44f39
+            <img
+              className="dark:invert"
+              src="/icons/github.svg"
+              alt="github icon"
+            />
           </a>
           <div className="mt-4 flex flex-col gap-3 py-1">
             <div className="items`-center flex justify-between">
@@ -75,10 +75,18 @@ const Mode = ({
             <div className="h-full w-full animate-pulse rounded-xl bg-primary-dark/60 dark:bg-primary-light/30" />
             <div className="absolute right-2 top-2 flex items-center justify-center gap-2 rounded-2xl bg-primary-light/80 p-1 opacity-80 dark:bg-primary-dark">
               <a href="#">
-                <img className="dark:invert" src="/icons/github.svg" alt="github icon" />
+                <img
+                  className="dark:invert"
+                  src="/icons/github.svg"
+                  alt="github icon"
+                />
               </a>
               <a href="#">
-                <img className="dark:invert" src="/icons/telegram.svg" alt="telegram icon" />
+                <img
+                  className="dark:invert"
+                  src="/icons/telegram.svg"
+                  alt="telegram icon"
+                />
               </a>
             </div>
           </div>

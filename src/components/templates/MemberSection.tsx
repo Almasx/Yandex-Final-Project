@@ -45,7 +45,7 @@ const MemberSection = ({
               2 designers
             </span>
           </h3>
-          <p className="text-xl text-primary-dark dark:text-primary-light">
+          <p className="text-xl">
             Fermentum tellus nec volutpat non enim consequat adcsddipiscing
             euismod. Mi et tortor dolor nec eu rtor dolor nec eur tor dolor nec
             eu

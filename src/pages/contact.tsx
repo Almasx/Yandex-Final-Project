@@ -58,15 +58,19 @@ const Contact = () => {
               <header className="box-content whitespace-nowrap text-[160px] ">
                 {t`bg`.toUpperCase()}
               </header>
-              <img className="dark:invert" src="/Circle.svg" alt="white circle" />
+              <img
+                className="dark:invert"
+                src="/Circle.svg"
+                alt="white circle"
+              />
             </>
           )}
         </div>
         <h3 className=" text-5xl">{t`headline`}</h3>
       </section>
-      <div className="col-span-12 bg-gradient-to-r from-white via-black/30  to-white pt-[1px] dark:from-black dark:via-white/30 dark:to-black">
+      <div className="from-white via-black/30 to-white dark:from-black  dark:via-white/30 dark:to-black col-span-12 bg-gradient-to-r pt-[1px]">
         <form
-          className="dark:bg-primary-dark bg-primary-light grid grid-cols-2 gap-8 py-16"
+          className="grid grid-cols-2 gap-8 bg-primary-light py-16 dark:bg-primary-dark"
           onSubmit={onSubmit}
         >
           <Input

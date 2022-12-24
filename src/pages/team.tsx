@@ -25,23 +25,35 @@ const Team = () => {
       <section className="relative col-span-full h-screen">
         <div className="absolute h-full w-full scale-110">
           <div className="absolute inset-0 m-auto aspect-square h-5/6 object-cover dark:invert">
-            <img src="/icons/circle.svg" className="opacity-70 circle-md absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%]" alt="white circle" />
+            <img
+              src="/icons/circle.svg"
+              className="circle-md absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] opacity-70"
+              alt="white circle"
+            />
             <div className="sun">
               <div className="dot">
                 <img src="/icons/star.svg" className="w-full" alt="star" />
               </div>
             </div>
-            <img src="/icons/circle.svg" className="opacity-70 circle-sm absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%]" alt="white circle" />
+            <img
+              src="/icons/circle.svg"
+              className="circle-sm absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] opacity-70"
+              alt="white circle"
+            />
             <div className="sun-min sun">
               <div className="dot">
                 <img src="/icons/star.svg" className="w-full" alt="star" />
               </div>
             </div>
-            <img src="/icons/circle.svg" className="opacity-70 circle-lg absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%]" alt="white circle" />
+            <img
+              src="/icons/circle.svg"
+              className="circle-lg absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] opacity-70"
+              alt="white circle"
+            />
           </div>
         </div>
         <div className="flex h-full w-full flex-col items-center justify-center">
-          <h2 className="mb-8 max-w-3xl text-center text-5xl font-bold text-primary-dark dark:text-primary-light md:mx-8">
+          <h2 className="mb-8 max-w-3xl text-center text-5xl font-bold  md:mx-8">
             {t`hero.headline`}
           </h2>
           <p className="mb-8 max-w-lg text-center text-primary-dark/30 dark:text-primary-light/30 md:mx-5 lg:text-lg">
@@ -89,7 +101,8 @@ const Team = () => {
           AROUND THE WORLD
         </p>
       </section>
-      <div className="dark:invert col-span-full">
+
+      <div className="col-span-full dark:invert">
         <img src="/icons/footer-logo.svg" alt="footer logo" />
       </div>
     </>

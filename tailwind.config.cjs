@@ -42,10 +42,14 @@ module.exports = {
           opacity: 0.5,
         },
       },
+      ripple: {
+        to: { transform: "scale(25)", opacity: 0 },
+      },
     },
     animation: {
       "scroll-infinite": "scroll 10s infinite linear",
       pulse: "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+      "ripple-effect": "0.6s linear ripple",
     },
     container: {
       padding: "auto",
