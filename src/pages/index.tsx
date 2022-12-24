@@ -5,6 +5,7 @@ import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import nextI18nConfig from "../../next-i18next.config.mjs";
 import Button from "../components/atoms/Button";
+import Link from "next/link.js";
 
 export const getStaticProps = async ({ locale }: { locale: string }) => ({
   props: {
@@ -39,7 +40,11 @@ const Home: NextPage = () => {
           </h1>
           <h1>{headline[2]}</h1>
         </div>
-        <Button className="mt-6 rounded-lg font-medium">{t`cta`}</Button>
+        <Link
+        href="/contact"
+      >
+          <Button className="mt-6 rounded-lg font-medium">{t`cta`}</Button>
+        </Link>
       </section>
     </>
   );
