@@ -24,7 +24,7 @@ const Team = () => {
     <>
       <section className="relative col-span-full h-screen">
         <div className="absolute h-full w-full scale-110">
-          <div className="absolute inset-0 m-auto aspect-square h-5/6 object-cover dark:invert">
+          <div className="absolute inset-0 m-auto aspect-square h-5/6 object-cover dark:invert hidden md:block">
             <img
               src="/icons/circle.svg"
               className="circle-md absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] opacity-70"
@@ -71,7 +71,7 @@ const Team = () => {
           <YMaps className="z-0 w-full">
             <Map
               defaultState={{ center: [55.76, 37.64], zoom: 7, controls: [] }}
-              className="w-100% z-10 flex h-[700px] w-full flex-col items-center"
+              className="w-100% z-10 flex h-[700px] w-full flex-col items-center rounded-lg overflow-hidden"
             >
               <ZoomControl />
               <GeoObject
@@ -102,7 +102,7 @@ const Team = () => {
         </p>
       </section>
 
-      <div className="col-span-full dark:invert">
+      <div className="col-span-full dark:invert invisible md:visible">
         <img src="/icons/footer-logo.svg" alt="footer logo" />
       </div>
     </>

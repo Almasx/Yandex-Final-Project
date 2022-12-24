@@ -26,10 +26,10 @@ const MemberSection = ({
           </div>
         )}
         {!loading && members && (
-          <div className="flex flex-row justify-between">
+          <div className="flex sm:justify-between sm:gap-0 flex-wrap gap-x-44 gap-y-8">
             {members.map((member) => (
               <div
-                className="span text-8xl font-bold text-gray-light-secondary dark:text-gray-dark-secondary"
+                className="span lg:text-7xl md:text-6xl sm:text-5xl text-4xl font-bold text-gray-light-secondary dark:text-gray-dark-secondary"
                 key={member.id}
               >
                 {member.name}
@@ -37,7 +37,7 @@ const MemberSection = ({
             ))}
           </div>
         )}
-        <div className="flex w-[500px] flex-col gap-6">
+        <div className="flex sm:w-[500px] w-full flex-col gap-6">
           <h3 className="text-4xl font-bold text-primary-dark/60 dark:text-primary-light/60">
             {headline.split("b")[0]}
             <span className="text-primary-dark dark:text-primary-light">
@@ -58,7 +58,7 @@ const MemberSection = ({
           </div>
         )}
         {!loading && (
-          <div className="grid grid-cols-4 gap-6">
+          <div className="grid lg:grid-cols-4 gap-6 sm:grid-cols-2 grid-cols-1 ">
             {members.map((member) => (
               <MemberCard key={member.id} {...member} />
             ))}
