@@ -26,10 +26,10 @@ const MemberSection = ({
           </div>
         )}
         {!loading && members && (
-          <div className="flex sm:justify-between sm:gap-0 flex-wrap gap-x-44 gap-y-8">
+          <div className="flex sm:justify-between sm:gap-0 flex-wrap gap-x-44 gap-y-8 sm:flex-row flex-col">
             {members.map((member) => (
               <div
-                className="span lg:text-7xl md:text-6xl sm:text-5xl text-4xl font-bold text-gray-light-secondary dark:text-gray-dark-secondary"
+                className="span lg:text-7xl md:text-6xl sm:text-5xl text-6xl font-bold text-gray-light-secondary dark:text-gray-dark-secondary"
                 key={member.id}
               >
                 {member.name}
