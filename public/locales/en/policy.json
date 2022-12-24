@@ -1,0 +1,76 @@
+{
+  "texts": [
+  {
+  "header":"General provisions",
+  "texts": ["This Privacy Policy has been developed by a Special TYPE (hereinafter, respectively, the Policy and the Operator) to fulfill the requirements of paragraph 2 of Part 1 of Article 18.1 of Federal Law No. 152–FZ of 27.07.2006 (hereinafter - the Law on Personal Data) and regulates the processing of personal data by the Operator of Users of the Site.",
+  "The Policy uses concepts in the sense that they are defined by paragraph 1.6 of the Policy. The Policy applies to the relations in the field of personal data processing that arose with the Operator both before and after the approval of this Policy.", "The Operator independently or jointly with other persons organizes the processing of personal data, and also determines the purposes of personal data processing, determines the actions (operations) performed with personal data.",
+  "The Policy applies to all personal data that the Operator receives from the Users of the Site.",
+  "In compliance with the requirements of part 2 of Article 18.1 of the Law on Personal Data, this Policy is published in free access on the Internet information and telecommunications network on the Website.",
+  "Basic concepts used in the Policy:",
+  "Personal data - any information related directly or indirectly to a specific or identifiable User of the Website;",
+  "A website is a collection of logically interconnected web pages (web documents) located on the Internet at адресу:www.example.ru ;",
+  "User – any person who has provided information to the Operator using the Site;",
+  "Personal Data Information System - a set of personal data contained in databases and information technologies and technical means that ensure their processing;",
+  "Personal data processing is any action (operation) or a set of actions (operations) with personal data performed using automation tools or without their use. The processing of personal data includes, inter alia:collection; recording;systematization;accumulation;storage;clarification (updating, modification);extraction; use;transfer (distribution, provision, access);depersonalization; blocking; deletion; destruction.",
+  "Automated processing of personal data - processing of personal data using computer technology;",
+  "Dissemination of personal data - actions aimed at disclosure of personal data to an indefinite circle of persons;",
+  "Provision of personal data - actions aimed at disclosure of personal data to a certain person or a certain circle of persons;",
+  "Depersonalization of personal data - actions as a result of which it becomes impossible to determine the identity of personal data to a specific person without the use of additional information the subject of personal data;",
+  "Blocking of personal data - temporary termination of processing of personal data (except in cases where processing is necessary to clarify personal data);",
+  "Destruction of personal data - actions as a result of which it becomes impossible to restore the content of personal data in the personal data information system and (or) as a result of which the material carriers of personal data are destroyed;",
+  "Cross-border transfer of personal data is the transfer of personal data to the territory of a foreign state to an authority of a foreign state, a foreign individual or a foreign legal entity."]
+  },
+  {
+  "header": "Purposes of personal data processing",
+  "texts": ["Processing of personal data by the Operator is carried out for the following purposes:",
+  "Processing of personal data by the Operator is carried out for the following purposes:",
+  "Processing of User requests for the purpose of concluding contracts with Users by the Operator;",
+  "Conclusion and execution by the Operator of contracts with Users;",
+  "Providing Users with access to information and materials contained on the Site;",
+  "Informing Users about the goods, services, advertising and other activities of the Operator;",
+  "Other purposes necessary for the Operator to comply with the legislation on personal data."]
+  },
+  {
+  "header":"Categories of processed personal data",
+  "texts": ["The Operator processes the following personal data of Users:surname, name, patronymic;email address;phone numbers; the photos.",
+  "The operator collects and processes anonymous data about visitors (including cookies) using Internet statistics and advertising (Yandex Metrika, Google Analytics and others).",
+  "The operator does not process provided by the Law on personal data special categories of personal data.",
+  " The operator does not process biometric categories of personal data provided for by the Law on Personal Data."
+  ]
+  },
+  {
+  "header":"Procedure and conditions for processing personal data",
+  "texts": ["The processing of personal data is carried out by the Operator with the consent of Users to the processing of their personal data, as well as without it in cases provided for by law. The User's consent to the processing of personal data is considered to have been received by the Operator from the moment the User places a special mark in the appropriate field of the personal data collection form posted on the Website.",
+  "The Operator performs Automated processing of personal data.",
+  "The operator processes personal data in a form that allows to determine the subject of personal data, no longer than the purposes of personal data processing require.",
+  "When the purposes of personal data processing are achieved, as well as in the case of withdrawal of the User's consent to their processing, personal data are subject to destruction, except as provided by law.",
+  "The operator implements the following requirements for the protection of personal data:",
+  "requirements for the confidentiality of personal data;",
+  "requirements to ensure the exercise by the subject of personal data of their rights, including the right to access information;",
+  "requirements to ensure the accuracy of personal data, and, if necessary, relevance to the purposes of personal data processing (with the adoption (ensuring the adoption) of measures to delete or clarify incomplete or inaccurate data);",
+  "requirements for the protection of personal data from unlawful or accidental access to them, destruction, modification, blocking, copying, provision, dissemination of personal data, as well as from other unlawful actions with respect to personal data;",
+  "other requirements stipulated by the legislation.",
+  "The Operator takes the following measures necessary and sufficient to ensure the fulfillment of obligations stipulated by the legislation concerning the procedure for processing and protection of personal data:",
+  "appointment of a person responsible for ensuring the security of personal data;",
+  "determination of the list of employees allowed to work with personal data;",
+  "approval of this Privacy Policy concerning the processing of personal data, ensuring their security;",
+  "application of legal, organizational and technical measures to ensure the security of personal data, in particular:identification of threats to the security of personal data during their processing in the Personal Data Information System; application of organizational and technical measures to ensure the security of personal data during their processing in the Personal Data Information System necessary to meet the requirements for personal data protection, the implementation of which ensures the levels of personal data security established by the Government of the Russian Federation; the application of procedures for assessing the compliance of information security tools that have passed in accordance with the established procedure; the establishment of rules for access to personal data processed in the Personal Data Information System; control over the measures taken to ensure the security of personal data and the level of security of the Personal Data Information System;",
+  "implementation of internal control of compliance of personal data processing with the Law on Personal Data and regulatory legal acts adopted in accordance with it, requirements for personal data protection, Operator's policy regarding personal data processing, Operator's local acts;",
+  "familiarization of employees directly engaged in the processing of personal data with the provisions of the legislation of the Russian Federation on personal data, including the requirements for the protection of personal data, as well as with this Policy.",
+  "The Operator has the right to transfer the User's personal data to third parties in the following cases:",
+  "The User has consented to such actions;",
+  "The transfer is necessary in order for the Operator to fulfill the contract concluded with the User;",
+  "The transfer is necessary in order to provide the User with access to certain services of the Site upon his request;",
+  "The transfer is provided for by the current legislation;",
+  "The transfer of personal data is carried out for statistical or other research purposes, with the exception of the purposes specified in Article 15 of the Law on Personal Data, subject to mandatory depersonalization of personal data.",
+  "When collecting personal data of Users, the Operator ensures the recording, systematization, accumulation, storage, clarification (updating, modification), extraction of personal data citizens of the Russian Federation using databases located on the territory of the Russian Federation, except for the cases specified in the Law on Personal Data."
+  ]
+  },
+  {
+    "header": "The procedure for User interaction with the Operator",
+  "texts": ["Users have the right to request information from the Operator regarding the processing of their personal data. To do this, you need to send a request to the following email address: ostvolova@mail.ru . The User's request must contain the information provided for in part 3 of Article 14 of the Law on Personal Data.",
+  "Users have the right to send requests for clarification, updating of personal data, applications for revocation of consent to the processing of personal data to the email address specified in paragraph 5.1 of the Policy."
+  ]
+  }
+  ]
+  }

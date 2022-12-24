@@ -77,6 +77,7 @@ const Contact = () => {
           <Input
             label={t`form.name`}
             name="name"
+            max="20"
             value={formData.clientName}
             onChange={(e) =>
               setFormData({

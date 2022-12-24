@@ -55,6 +55,7 @@ const Input = ({
       )}
       {type !== "textarea" ? (
         <input
+          max={10}
           type={type}
           id={name}
           name={name}
