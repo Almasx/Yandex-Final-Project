@@ -54,6 +54,7 @@ const projects = () => {
         </p>
         <Button onClick={() => push("/contact")} className="mt-6 rounded-lg font-medium">{t`cta`}</Button>
       </div>
+
       <div className="col-span-full">
         <InfiniteScroll
           dataLength={projects ? projects.projects.length : 0}
