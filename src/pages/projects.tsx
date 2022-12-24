@@ -25,7 +25,7 @@ const projects = () => {
   const { data, fetchNextPage, hasNextPage } =
     trpc.projects.getProjects.useInfiniteQuery(
       { limit: 2 },
-      { getNextPageParam: (lastProject) => lastProject.nextId}
+      { getNextPageParam: (lastProject) => lastProject.nextId !== undefined ? lastProject.nextId + 1 : undefined}
     );
 
   // eslint-disable-next-line react-hooks/rules-of-hooks

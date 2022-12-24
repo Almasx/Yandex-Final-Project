@@ -20,7 +20,7 @@ export const projectRouter = router({
 
       return {
         projects,
-        nextId: projects.length === limit ? projects[1]?.id + 1 : undefined,
+        nextId: projects.length === limit ? projects[1]?.id : undefined,
       };
     }),
 });
