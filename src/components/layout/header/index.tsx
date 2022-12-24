@@ -15,16 +15,18 @@ const Navigation = () => {
   return (
     <>
       <nav
-        className="fixed z-20 flex h-12 w-full items-center justify-center border-b border-b-gray-light-secondary bg-primary-light/60 text-sm uppercase
-    text-primary-dark backdrop-blur-2xl dark:border-b-gray-dark-secondary dark:bg-primary-dark/60 dark:text-primary-light lg:h-16 "
+        className="fixed z-20 flex h-12 w-full  items-center justify-center 
+        border-b border-b-gray-light-secondary bg-primary-light/60 text-sm uppercase
+      text-primary-dark backdrop-blur-2xl dark:border-b-gray-dark-secondary 
+      dark:bg-primary-dark/60 dark:text-primary-light lg:h-16 "
       >
-        <div className="mx-4 grid w-screen grid-cols-3 items-center lg:w-[1024px]">
+        <div className="mx-4 flex w-screen flex-row items-center lg:w-[1024px]">
           {isPhone && (
             <button onClick={() => setShowMenu((previos) => !previos)}>
               <img src="./icons/menu.svg" className="invert dark:invert-0" />
             </button>
           )}
-          <Link href="/" className="flex w-24 justify-center  md:w-32">
+          <Link href="/" className="mx-auto w-24 md:mx-0 md:w-60">
             <img
               className="dark:invert "
               src="/icons/header-logo.svg"
@@ -32,7 +34,7 @@ const Navigation = () => {
             />
           </Link>
           {!isPhone && <Links />}
-          <div className="flex flex-row items-center justify-end gap-3">
+          <div className="flex flex-row items-center justify-end gap-3 md:w-60">
             {!isPhone && <LanguageSwitch />}
             {!isPhone && <ThemeSwitch />}
             <Button
@@ -45,9 +47,17 @@ const Navigation = () => {
         </div>
       </nav>
 
-      {isPhone && (
-        <div className="fixed top-12 px-4 pt-16">
+      {isPhone && showMenu && (
+        <div
+          className="fixed top-12 right-0 left-0 z-20 flex flex-col gap-8
+        border-b border-b-gray-light-secondary bg-primary-light/60 px-4 pt-8 
+        backdrop-blur-2xl dark:border-b-gray-dark-secondary dark:bg-primary-dark/60"
+        >
           <Links />
+          <div className="flex h-12 flex-row items-center justify-between ">
+            <ThemeSwitch />
+            <LanguageSwitch />
+          </div>
         </div>
       )}
     </>

@@ -40,7 +40,7 @@ const ProjectCard = ({
         />
       </a>
       <div className="mt-4 flex flex-col gap-3 py-1">
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col justify-between md:flex-row md:items-center">
           <span className="text-3xl ">{title}</span>
           <span className="text-primary-dark/30 dark:text-primary-light/30">
             21/11/2022 | Hackathon

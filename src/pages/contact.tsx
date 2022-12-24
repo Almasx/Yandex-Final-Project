@@ -55,22 +55,23 @@ const Contact = () => {
         >
           {Array(4).fill(
             <>
-              <header className="text-primary-dark box-content whitespace-nowrap text-[160px] dark:text-primary-light">
+              <header className="box-content whitespace-nowrap text-8xl text-primary-dark dark:text-primary-light md:text-[160px]">
                 {t`bg`.toUpperCase()}
               </header>
               <img
-                className="dark:invert"
+                className="h-24 w-24 dark:invert md:h-32 md:w-32"
                 src="/Circle.svg"
                 alt="white circle"
               />
             </>
           )}
         </div>
-        <h3 className="text-primary-dark dark:text-primary-light text-5xl">{t`headline`}</h3>
+        <h3 className="text-3xl text-primary-dark dark:text-primary-light sm:text-5xl">{t`headline`}</h3>
       </section>
-      <div className="from-white via-black/30 to-white dark:from-black  dark:via-white/30 dark:to-black col-span-12 bg-gradient-to-r pt-[1px]">
+
+      <div className="col-span-12 bg-gradient-to-r from-primary-light via-primary-dark/30  to-primary-light pt-[1px] dark:from-primary-dark dark:via-primary-light/30 dark:to-primary-dark">
         <form
-          className="grid grid-cols-2 gap-8 bg-primary-light py-16 dark:bg-primary-dark"
+          className="grid grid-cols-1 gap-8 bg-primary-light py-16 dark:bg-primary-dark sm:grid-cols-2"
           onSubmit={onSubmit}
         >
           <Input
@@ -118,9 +119,9 @@ const Contact = () => {
               }))
             }
           >
-            {(t`form.permission`).split('/')[0]}
+            {t`form.permission`.split("/")[0]}
             <Link href="policy" className="underline">
-              {(t`form.permission`).split('/')[1]}
+              {t`form.permission`.split("/")[1]}
             </Link>
           </CheckBox>
           <div className="col-span-full">

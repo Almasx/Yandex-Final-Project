@@ -6,7 +6,11 @@ import React from "react";
 const Links = () => {
   const { pathname } = useRouter();
   return (
-    <div className="flex flex-row items-center justify-center gap-5 font-light capitalize text-primary-dark/30 dark:text-primary-light/30">
+    <div
+      className="flex flex-col justify-center gap-1 text-2xl font-light capitalize text-primary-dark/30
+    dark:text-primary-light/30 sm:mx-auto sm:flex-row sm:items-center sm:gap-5 sm:text-base
+    "
+    >
       <Link
         href="/"
         className={clsx(
