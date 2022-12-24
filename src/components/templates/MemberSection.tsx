@@ -19,10 +19,10 @@ const MemberSection = ({
       <section className="flex  flex-col gap-16 bg-primary-light py-16 dark:bg-primary-dark">
         {loading && (
           <div className="flex sm:justify-between sm:gap-0 flex-wrap gap-x-44 gap-y-8 sm:flex-row flex-col">
-            <div className="lg:h-20 md:h-16 sm:h-12 h-16 w-[20%] animate-pulse rounded-xl bg-gray-light-secondary dark:bg-gray-dark-secondary"></div>
-            <div className="lg:h-20 md:h-16 sm:h-12 h-16 w-[20%] animate-pulse rounded-xl bg-gray-light-secondary dark:bg-gray-dark-secondary"></div>
-            <div className="lg:h-20 md:h-16 sm:h-12 h-16 w-[20%] animate-pulse rounded-xl bg-gray-light-secondary dark:bg-gray-dark-secondary"></div>
-            <div className="lg:h-20 md:h-16 sm:h-12 h-16 w-[20%] animate-pulse rounded-xl bg-gray-light-secondary dark:bg-gray-dark-secondary"></div>
+            <div className="lg:h-20 md:h-16 sm:h-12 h-16 w-[40%] sm:w-[20%] animate-pulse rounded-xl bg-gray-light-secondary dark:bg-gray-dark-secondary"></div>
+            <div className="lg:h-20 md:h-16 sm:h-12 h-16 w-[40%] sm:w-[20%] animate-pulse rounded-xl bg-gray-light-secondary dark:bg-gray-dark-secondary"></div>
+            <div className="lg:h-20 md:h-16 sm:h-12 h-16 w-[40%] sm:w-[20%] animate-pulse rounded-xl bg-gray-light-secondary dark:bg-gray-dark-secondary"></div>
+            <div className="lg:h-20 md:h-16 sm:h-12 h-16 w-[40%] sm:w-[20%] animate-pulse rounded-xl bg-gray-light-secondary dark:bg-gray-dark-secondary"></div>
           </div>
         )}
         {!loading && members && (
