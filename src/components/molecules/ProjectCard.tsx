@@ -20,7 +20,9 @@ const ProjectCard = ({
 }: IProjectCardProps) => {
   return (
     <div className="relative w-full rounded-md border border-gray-light p-4 dark:border-gray-dark">
-      <div className=" h-60 w-full rounded-md bg-primary-dark/60 dark:bg-primary-light/30" />
+      <div className=" h-60 w-full rounded-md bg-primary-dark/60 dark:bg-primary-light/30 overflow-hidden"  >
+        <img src="./project-img.jpg" alt="" />
+      </div>
       <div className="absolute right-16 top-6 flex rounded-xl bg-primary-light py-1 px-3 opacity-80 dark:bg-primary-dark">
         <img
           src={author.link_pfp}
@@ -43,7 +45,7 @@ const ProjectCard = ({
         <div className="flex flex-col justify-between md:flex-row md:items-center">
           <span className="text-3xl ">{title}</span>
           <span className="text-primary-dark/30 dark:text-primary-light/30">
-            21/11/2022 | Hackathon
+            21.11.2020 | Hackathon
           </span>
         </div>
         <div className="flex flex-row gap-2">
