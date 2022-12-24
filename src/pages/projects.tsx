@@ -27,7 +27,6 @@ const projects = () => {
       { limit: 2 },
       { getNextPageParam: (lastProject) => lastProject.nextId !== undefined ? lastProject.nextId + 1 : undefined}
     );
-
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const projects = useMemo(
     () =>
@@ -62,7 +61,7 @@ const projects = () => {
           loader={<><Mode></Mode><Mode></Mode></>}
           className="my-20 grid grid-cols-2 gap-12"
         >
-          {projects &&
+          {!data ? <><Mode></Mode><Mode></Mode></> : projects &&
             projects.projects.map((project) => {
               const {
                 title,
